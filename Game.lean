@@ -1,26 +1,28 @@
-import Game.Levels.DemoWorld
+import Game.Levels.GroupWorld
 
 -- Here's what we'll put on the title screen
-Title "Hello World Game"
+Title "Abstract Algebra, the Game"
 Introduction
 "
-This text appears on the starting page where one selects the world/level to play.
-You can use **markdown**.
+# Welcome to Abstract Algebra, the Game!
+
+This course is a basic introduction of undergraduate-level Abstract Algebra in Lean. We will cover structures such as groups, rings, integral domains, and fields, as well as relations between them like homomorphisms and isomorphisms.
+
+**Important**: Please note that this course is unfinished and made by [an undergraduate](https://www.linkedin.com/in/advayth-pashupati/), and should be taken with a grain of salt.
 "
 
 Info "
-Here you can put additional information about the game. It is accessible
-from the starting through the drop-down menu.
-
-For example: Game version, Credits, Link to Github and Zulip, etc.
-
-Use **markdown**.
+*Abstract Algebra, The Game*
+## Credits
+- **Game Design**: [Advayth Pashupati](https://github.com/AamindMandragora)
+- **Department**: [Mathematics at the University of Illinois](https://math.illinois.edu)
+- **Many Thanks To**: The lean4game team and their wonderful system!
 "
 
 /-! Information to be displayed on the servers landing page. -/
 Languages "en"
-CaptionShort "Game Template"
-CaptionLong "You should use this game as a template for your own game and add your own levels."
+CaptionShort "Abstract Algebra, the Game!"
+CaptionLong "This course is a basic introduction of undergraduate-level Abstract Algebra in Lean."
 -- Prerequisites "" -- add this if your game depends on other games
 -- CoverImage "images/cover.png"
 

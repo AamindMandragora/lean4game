@@ -1,4 +1,6 @@
 {
+  "name": "Abstract Algebra, The Game",
+  "runArgs": ["--name", "absalg16game-container"],
   "forwardPorts": [3000],
   "build": {"dockerfile": "Dockerfile"},
   "onCreateCommand": "bash .devcontainer/setup.sh",

@@ -1,0 +1,32 @@
+{"§0 stands for rewrite. Let §1 and §2 be the left and right hand sides of some §3, then §4 replaces every instance of §5 in the goal with §6. We can also do §7 to replace every instance of §8 in the hypothesis §9 with §10.":
+ "",
+ "§0 stands for reflect. One of the properties of equality (and every equivalence relation, if you know what those are) is reflexivity, which means that every element for which the relation is defined on naturally equals itself. In other words, §1. For any goal of that form, this tactic will instantly prove it.":
+ "",
+ "§0 says §1.": "",
+ "level completed! 🎉": "",
+ "level completed with warnings… 🎭": "",
+ "intermediate goal solved! 🎉": "",
+ "Zero Equals Zero": "",
+ "When the goal is the exact same as some hypothesis §0, §1 will solve it.": "",
+ "When the goal is in the form §0, §1 will create a hypothesis §2 that is the proposition §3, turning the goal into §4.":
+ "",
+ "We can use §0 to introduce a smaller or slightly altered version of the goal which we then prove in one line, and that proof becomes a hypothesis we can use in the future. For example, for some goal of the form §1, §2 will use a tactic to prove §3, which then becomes a hypothesis §4.":
+ "",
+ "Unique Identity": "",
+ "This course is a basic introduction of undergraduate-level Abstract Algebra in Lean.":
+ "",
+ "TODO": "",
+ "Right Inverse": "",
+ "Right Identity": "",
+ "Remember, we're just trying to prove that §0. We just introduced the §1 tactic that proves any goal of the form §2.":
+ "",
+ "Left Inverse Cancellation": "",
+ "Left Identity": "",
+ "Left Cancellation": "",
+ "Group World": "",
+ "Abstract Algebra, the Game!": "",
+ "Abstract Algebra, the Game": "",
+ "*Abstract Algebra, The Game*\n## Credits\n- **Game Design**: [Advayth Pashupati](https://github.com/AamindMandragora)\n- **Department**: [Mathematics at the University of Illinois](https://math.illinois.edu)\n- **Many Thanks To**: The lean4game team and their wonderful system!":
+ "",
+ "# Welcome to Abstract Algebra, the Game!\n\nThis course is a basic introduction of undergraduate-level Abstract Algebra in Lean. We will cover structures such as groups, rings, integral domains, and fields, as well as relations between them like homomorphisms and isomorphisms.\n\n**Important**: Please note that this course is unfinished and made by [an undergraduate](https://www.linkedin.com/in/advayth-pashupati/), and should be taken with a grain of salt.":
+ ""}

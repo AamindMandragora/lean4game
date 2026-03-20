@@ -1,4 +1,4 @@
-FROM node:22
+FROM node:25
 
 # Set default shell to bash
 SHELL ["/bin/bash", "-c"]
