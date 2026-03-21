@@ -31,7 +31,7 @@ Statement is_zero (a e : G) : e + a = a → e = 0 := by
   Hint (hidden := true) "Finally, we'll clean up the zeroes."
   Hint (hidden := true) "Use `rw [add_zero] at {h1}`."
   rw [add_zero] at h1
-  Hint (hidden := true) "Our assumption `{h1}` looks familiar, doesn't it. How can we use it to prove the goal?"
+  Hint (hidden := true) "Our assumption `{h1}` looks familiar, doesn't it? How can we use it to prove the goal?"
   Hint (hidden := true) "Use `exact {h1}`."
   exact h1
 

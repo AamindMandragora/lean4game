@@ -30,6 +30,8 @@ Statement is_inverse (a b : G) : a + b = 0 → b = (-a) := by
   Hint (hidden := true) "This time, we have zeroes on both sides. Can we get rid of them in one line?"
   Hint (hidden := true) "Use `rw [add_zero, zero_add] at {h1}`."
   rw [add_zero, zero_add] at h1
+  Hint (hidden := true) "Our assumption `{h1}` looks familiar, doesn't it? How can we use it to prove the goal?"
+  Hint (hidden := true) "Use `exact {h1}`."
   exact h1
 
 Conclusion "Now we can further simplify an unknown element `b` to be `(-a)` if they add to `0`! Every element in a group has one, and only one, corresponding inverse."

@@ -9,7 +9,7 @@ Level 6
 
 Title "Right Identity"
 
-Introduction "Now, the second half of the pair. And with it, a new tactic! If we have a lemma in the form of a logical implication (`P → Q`), and our goal is `Q`, then we know that if `P` holds, our goal must also hold. This means that we can just prove `P` instead. `apply lemma` will replace the goal in the form of `lemma`'s conclusion `Q` with its hypothesis `P`. Using this, we must prove that the left identity `0` also serves as a right identity."
+Introduction "Now, the second half of the pair. And with it, a new tactic! If we have a lemma in the form of a logical implication (`P → Q`), and our goal is `Q`, then we know that if `P` holds, our goal must also hold. This means that we can just prove `P` instead. `apply lemma` will replace the goal in the form of `lemma`'s conclusion `Q` with its hypothesis `P`. We can also `apply lemma at assumption` where `assumption` is `P` to turn it into `Q`. Using this, we must prove that the left identity `0` also serves as a right identity."
 
 /-- `add_zero (a : G)` says `a + 0 = a`. -/
 TheoremDoc add_zero as "add_zero" in "Group"

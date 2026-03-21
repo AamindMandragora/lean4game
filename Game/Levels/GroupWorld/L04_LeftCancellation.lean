@@ -11,11 +11,13 @@ Title "Left Cancellation"
 
 Introduction "It should now be apparent that I'm not clever with names. Unfortunately, I'm also not clever with level design, which means that you have to learn three new tactics in one level. We're trying to prove that, if `a + b = a + c`, then `b = c` by force. In other words, left cancellation.
 
-The first new tactic to learn is `intro`. If our goal is in the form `hypothesis → conclusion`, then we can `intro h` to make `hypothesis` one of our assumptions, labelled `h`. Our goal then becomes `conclusion`.
+The first new tactic to learn is `intro`. If our goal is in the form `hypothesis → conclusion`, then we can `intro h` to make `hypothesis` one of our assumptions, labelled `h`. Our goal then becomes `conclusion`. If you use `intro`, it's very likely you'll use the next two tactics as well.
 
 The second new tactic to learn is `exact`. If our goal looks exactly like one of our assumptions `h`, then we can use `exact h` to prove it in one step.
 
-The final new tactic is called `have`. This tactic creates a new subgoal, which you then have to prove. Once you do, you can use it as an assumption to prove the main goal. `have` and `rw` are two of the most important and useful tactics in Lean.
+The final new tactic is called `have`. This tactic creates a new subgoal, which you then have to prove. Once you do, you can use it as an assumption to prove the main goal. `have` and `rw` are two of the most important and useful tactics in Lean. Here is a sample use of `have`: `have ha : 0 + a = a := by rw [zero_add]`. What this does is: create a subgoal called `ha` where we must prove `0 + a = 0`; proves it by using `rw [zero_add]`, which replaces the `0 + a` with an `a` and implicitly calling `rfl` on the remaining `a = a`.
+
+It might also be useful for you to be able to rewrite things inside an assumption `h`. We can do this by using `rw [lemma] at assumption`.
 
 You can read the documentation for these three tactics in the `Tactics` section on the right. Good luck!"
 
