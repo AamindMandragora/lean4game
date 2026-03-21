@@ -1,15 +1,15 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-20\n"
+"POT-Creation-Date: 2026-03-21\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit"
 
-#: GameServer.RpcHandlers
-msgid "level completed with warnings… 🎭"
+#: Game.Levels.GroupWorld.L06_RightIdentity
+msgid "We're given a zero for free this time. What can we do with it to enable some cancelling out?"
 msgstr ""
 
 #. §0: `add_assoc a b c`
@@ -22,119 +22,81 @@ msgstr ""
 #: Game.Levels.GroupWorld.L05_RightInverse
 #: Game.Levels.GroupWorld.L06_RightIdentity
 #: Game.Levels.GroupWorld.L07_UniqueIdentity
+#: Game.Levels.GroupWorld.L08_UniqueInverse
+#: Game.Levels.GroupWorld.L09_InverseOfZero
+#: Game.Levels.GroupWorld.L10_RightCancellation
+#: Game.Levels.GroupWorld.L11_DoubleInverse
+#: Game.Levels.GroupWorld.L12_ShoesAndSocks
 msgid "§0 says §1."
 msgstr ""
 
-#: GameServer.RpcHandlers
-msgid "level completed! 🎉"
-msgstr ""
-
-#: Game
-msgid "This course is a basic introduction of undergraduate-level Abstract Algebra in Lean."
-msgstr ""
-
-#: Game
-msgid "*Abstract Algebra, The Game*\n"
-"## Credits\n"
-"- **Game Design**: [Advayth Pashupati](https://github.com/AamindMandragora)\n"
-"- **Department**: [Mathematics at the University of Illinois](https://math.illinois.edu)\n"
-"- **Many Thanks To**: The lean4game team and their wonderful system!"
-msgstr ""
-
-#. §0: `rw`
-#. §1: `l`
-#. §2: `r`
-#. §3: `lemma`
-#. §4: `rw [lemma]`
-#. §5: `l`
-#. §6: `r`
-#. §7: `rw [lemma] at h`
-#. §8: `l`
-#. §9: `h`
-#. §10: `r`
-#: Game.Metadata
-msgid "§0 stands for rewrite. Let §1 and §2 be the left and right hand sides of some §3, then §4 replaces every instance of §5 in the goal with §6. We can also do §7 to replace every instance of §8 in the hypothesis §9 with §10."
-msgstr ""
-
-#: Game.Levels.GroupWorld.L01_ZeroEqualsZero
-#: Game.Levels.GroupWorld.L01_ZeroEqualsZero
-#: Game.Levels.GroupWorld.L02_LeftIdentity
-#: Game.Levels.GroupWorld.L02_LeftIdentity
-#: Game.Levels.GroupWorld.L02_LeftIdentity
-#: Game.Levels.GroupWorld.L03_LeftInverseCancellation
-#: Game.Levels.GroupWorld.L03_LeftInverseCancellation
-#: Game.Levels.GroupWorld.L03_LeftInverseCancellation
+#. §0: `have h1 : (-a) + (a + b) = (-a) + (a + c) := by rw [«{h}»]`
+#. §1: `(a + b)`
+#. §2: `(a + c)`
+#. §3: `«{h}»`
 #: Game.Levels.GroupWorld.L04_LeftCancellation
-#: Game.Levels.GroupWorld.L04_LeftCancellation
-#: Game.Levels.GroupWorld.L04_LeftCancellation
-#: Game.Levels.GroupWorld.L05_RightInverse
-#: Game.Levels.GroupWorld.L05_RightInverse
-#: Game.Levels.GroupWorld.L05_RightInverse
-#: Game.Levels.GroupWorld.L06_RightIdentity
-#: Game.Levels.GroupWorld.L06_RightIdentity
-#: Game.Levels.GroupWorld.L06_RightIdentity
-#: Game.Levels.GroupWorld.L07_UniqueIdentity
-#: Game.Levels.GroupWorld.L07_UniqueIdentity
-#: Game.Levels.GroupWorld.L07_UniqueIdentity
-#: Game.Levels.GroupWorld
-msgid "TODO"
-msgstr ""
-
-#. §0: `0 = 0`
-#. §1: `rfl`
-#. §2: `X = X`
-#: Game.Levels.GroupWorld.L01_ZeroEqualsZero
-msgid "Remember, we're just trying to prove that §0. We just introduced the §1 tactic that proves any goal of the form §2."
-msgstr ""
-
-#: Game
-msgid "# Welcome to Abstract Algebra, the Game!\n"
-"\n"
-"This course is a basic introduction of undergraduate-level Abstract Algebra in Lean. We will cover structures such as groups, rings, integral domains, and fields, as well as relations between them like homomorphisms and isomorphisms.\n"
-"\n"
-"**Important**: Please note that this course is unfinished and made by [an undergraduate](https://www.linkedin.com/in/advayth-pashupati/), and should be taken with a grain of salt."
-msgstr ""
-
-#: Game.Levels.GroupWorld.L05_RightInverse
-msgid "Right Inverse"
+msgid "Use §0 This creates a subgoal of the form we specified earlier, then proves it by substituting §1 for §2 using the assumption §3."
 msgstr ""
 
 #: GameServer.RpcHandlers
 msgid "intermediate goal solved! 🎉"
 msgstr ""
 
-#: Game.Levels.GroupWorld.L02_LeftIdentity
-msgid "Left Identity"
+#: Game.Levels.GroupWorld.L10_RightCancellation
+msgid "Perform the cancellation."
 msgstr ""
 
-#: Game.Levels.GroupWorld.L04_LeftCancellation
-msgid "Left Cancellation"
+#. §0: `rw [neg_add_cancel a]`
+#: Game.Levels.GroupWorld.L05_RightInverse
+msgid "Use §0 from level three!"
 msgstr ""
 
-#: Game
-msgid "Abstract Algebra, the Game!"
+#. §0: `(-a)`
+#. §1: `(-a)`
+#: Game.Levels.GroupWorld.L07_UniqueIdentity
+msgid "We must add §0 to the right on both sides! Let's call that our subgoal. How can we use our assumption to prove that adding §1 to both sides preserves equality?"
+msgstr ""
+
+#. §0: `rw [← neg_add a]`
+#: Game.Levels.GroupWorld.L06_RightIdentity
+msgid "Use §0 to turn it into an ((-a) + a)."
+msgstr ""
+
+#. §0: `0`
+#: Game.Levels.GroupWorld.L09_InverseOfZero
+msgid "We know know that §0 is its own inverse, which begs the question: can any element be its own inverse? Yes! We've been working with the arbitrary group, but choosing a specific one can allow you to find more properties specific to it."
+msgstr ""
+
+#: Game.Levels.GroupWorld.L05_RightInverse
+msgid "The trick here is to insert something that can eventually cancel out with something on the left. But to do that, we need an extra term to manipulate. How can we add an extra term to the left that doesn't change the value of the expression?"
 msgstr ""
 
 #: Game.Levels.GroupWorld.L07_UniqueIdentity
 msgid "Unique Identity"
 msgstr ""
 
-#. §0: `h`
-#. §1: `exact h`
-#: Game.Metadata
-msgid "When the goal is the exact same as some hypothesis §0, §1 will solve it."
+#. §0: `(-a)`
+#. §1: `(a)`
+#: Game.Levels.GroupWorld.L05_RightInverse
+msgid "We know we'd like to cancel out the §0 and the §1, but the parentheses aren't letting us. How can we fix that?"
 msgstr ""
 
-#: Game
-msgid "Abstract Algebra, the Game"
+#. §0: `(-a) + (a + b) = (-a) + (a + c)`
+#: Game.Levels.GroupWorld.L04_LeftCancellation
+msgid "Our subgoal will look like §0. Is there a way we can prove that true in a single line?"
 msgstr ""
 
 #: Game.Levels.GroupWorld.L03_LeftInverseCancellation
 msgid "Left Inverse Cancellation"
 msgstr ""
 
-#: Game.Levels.GroupWorld.L01_ZeroEqualsZero
-msgid "Zero Equals Zero"
+#: Game.Levels.GroupWorld.L10_RightCancellation
+msgid "We can finally cancel terms on both sides! Only two more levels to go."
+msgstr ""
+
+#. §0: `is_zero`
+#: Game.Levels.GroupWorld.L07_UniqueIdentity
+msgid "Congrats! Now we know that every group has a unique, double-sided identity! We can use this lemma, §0, to simplify mystery elements as long as they satisfy the hypothesis."
 msgstr ""
 
 #. §0: `P → Q`
@@ -146,25 +108,548 @@ msgstr ""
 msgid "When the goal is in the form §0, §1 will create a hypothesis §2 that is the proposition §3, turning the goal into §4."
 msgstr ""
 
-#. §0: `have`
-#. §1: `P ∧ Q`
-#. §2: `have h : P := by tactic`
-#. §3: `P`
-#. §4: `h`
-#: Game.Metadata
-msgid "We can use §0 to introduce a smaller or slightly altered version of the goal which we then prove in one line, and that proof becomes a hypothesis we can use in the future. For example, for some goal of the form §1, §2 will use a tactic to prove §3, which then becomes a hypothesis §4."
-msgstr ""
-
 #. §0: `rfl`
 #. §1: `∀ x, x = x`
 #: Game.Metadata
 msgid "§0 stands for reflect. One of the properties of equality (and every equivalence relation, if you know what those are) is reflexivity, which means that every element for which the relation is defined on naturally equals itself. In other words, §1. For any goal of that form, this tactic will instantly prove it."
 msgstr ""
 
+#: Game.Levels.GroupWorld.L07_UniqueIdentity
+msgid "Once again, the parentheses aren't on our side. Let's fix that."
+msgstr ""
+
+#. §0: `G`
+#. §1: `0 = 0`
+#. §2: `rfl`
+#. §3: `Tactics`
+#: Game.Levels.GroupWorld.L01_ZeroEqualsZero
+msgid "Welcome to level one! Our goal is to prove that, inside some group §0, §1. Seems pretty simple, right? Yeah, there's no trick here. Since groups are based off sets, each element in the group will be unique and thus an equality operator is defined. The property that every element equals itself is called **reflexivity**. In Lean, we can cite the property using the §2 tactic. You can learn more about it, and future other tactics, by clicking on the §3 section on the right and selecting it."
+msgstr ""
+
+#: Game.Levels.GroupWorld.L04_LeftCancellation
+msgid "You've just proved left cancellation, another really useful lemma! Now, onto something even more exciting!"
+msgstr ""
+
+#. §0: `0 + b = b`
+#. §1: `0`
+#: Game.Levels.GroupWorld.L03_LeftInverseCancellation
+msgid "We're now left with §0. What group axiom can we use to remove the §1?"
+msgstr ""
+
+#: Game.Levels.GroupWorld.L08_UniqueInverse
+msgid "Once again, we have a goal in the form of a logical implication. How can we simplify it?"
+msgstr ""
+
+#: GameServer.RpcHandlers
+msgid "level completed with warnings… 🎭"
+msgstr ""
+
+#. §0: `rw [← neg_add (-a)]`
+#. §1: `0`
+#. §2: `(-(-a)) + (-a)`
+#: Game.Levels.GroupWorld.L05_RightInverse
+msgid "Use §0 to replace the §1 with §2."
+msgstr ""
+
+#: Game.Levels.GroupWorld.L11_DoubleInverse
+#: Game.Levels.GroupWorld.L11_DoubleInverse
+#: Game.Levels.GroupWorld.L12_ShoesAndSocks
+#: Game.Levels.GroupWorld.L12_ShoesAndSocks
+#: Game.Levels.GroupWorld.L12_ShoesAndSocks
+msgid "TODO"
+msgstr ""
+
+#: Game.Levels.GroupWorld.L10_RightCancellation
+msgid "A while ago, we proved left cancellation. Now that we know our identity and inverses are double-sided, let's try and prove right cancellation!"
+msgstr ""
+
+#. §0: `rw [← zero_add (a + (-a))]`
+#. §1: `0`
+#: Game.Levels.GroupWorld.L05_RightInverse
+msgid "Use §0 to put a §1 in front."
+msgstr ""
+
+#. §0: `0`
+#: Game.Levels.GroupWorld.L06_RightIdentity
+msgid "Now, the second half of the pair. We must prove that the left identity §0 also serves as a right identity."
+msgstr ""
+
+#. §0: `rw [neg_add]`
+#. §1: `(-a) + a`
+#. §2: `0`
+#: Game.Levels.GroupWorld.L03_LeftInverseCancellation
+msgid "Use §0 to replace §1 with §2."
+msgstr ""
+
+#. §0: `rw`
+#. §1: `l`
+#. §2: `r`
+#. §3: `lemma`
+#. §4: `rw [lemma]`
+#. §5: `l`
+#. §6: `r`
+#. §7: `r`
+#. §8: `l`
+#. §9: `rw [← lemma]`
+#. §10: `rw [lemma] at h`
+#. §11: `l`
+#. §12: `h`
+#. §13: `r`
+#. §14: `Rewrite`
+#. §15: `rw`
+#. §16: `rfl`
+#. §17: `lemma`
+#. §18: `a`
+#. §19: `a`
+#. §20: `rw [lemma b]`
+#. §21: `b`
+#. §22: `lemma`
+#. §23: `rw [lemma a b c ...]`
+#. §24: `lemma`
+#. §25: `rw [lemma1, lemma2, ...]`
+#: Game.Metadata
+msgid "§0 stands for rewrite. Let §1 and §2 be the left and right hand sides of some §3, then §4 replaces every instance of §5 in the goal with §6. If the goal instead has §7s that we want to replace with §8, we can do §9 (the arrow is typed using \\\\l). We can also do §10 to replace every instance of §11 in the hypothesis §12 with §13. There actually is a tactic called §14, but the difference is that §15 inherently attemps to use §16 at the end, which saves a line of proof and renders the former tactic obsolete. If §17's hypothesis includes a variable §18, then instead of letting Lean try and choose the first valid §19 in the proof, we can specify it ourselves using §20, where §21 is the variable we wanted to match. If §22 has multiple variables, we can specify all of them sequentially using §23. Similarly, if we have multiple §24s we want to replace, we can use §25."
+msgstr ""
+
+#: Game.Levels.GroupWorld.L04_LeftCancellation
+msgid "That simplified the left side. Now, how do we simplify the right?"
+msgstr ""
+
+#: Game
+msgid "# Welcome to Abstract Algebra, the Game!\n"
+"\n"
+"This course is a basic introduction of undergraduate-level Abstract Algebra in Lean. We will cover structures such as groups, rings, integral domains, and fields, as well as relations between them like homomorphisms and isomorphisms.\n"
+"\n"
+"**Important**: Please note that this course is unfinished and made by [an undergraduate](https://www.linkedin.com/in/advayth-pashupati/), and should be taken with a grain of salt."
+msgstr ""
+
+#. §0: `Theorems`
+#. §1: `Group`
+#. §2: `a + b`
+#. §3: `(-a)`
+#. §4: `a`
+#: Game.Levels.GroupWorld.L03_LeftInverseCancellation
+msgid "For this level, you'll have to use all three group axioms. As always, click on §0 -> §1 to see what you've unlocked. After this level, you'll be able to use this fact in all future proofs without redoing the steps. We will attempt to prove that, if we have an expression §2, we can add §3 to the left to cancel out the §4.\n"
+"\n"
+"For the rest of the levels in this world, I'll provide a complete set of steps given to you behind hints in case you get stuck. However, I'd like it if you used them as little as possible, because it's not great for learning if you're just copying down my proof without thinking about it first."
+msgstr ""
+
+#. §0: `intro h`
+#. §1: `a + b = a + c`
+#. §2: `b = c`
+#: Game.Levels.GroupWorld.L04_LeftCancellation
+msgid "Use §0 to move §1 into the assumptions category and make the goal §2."
+msgstr ""
+
+#. §0: `«{h1}»`
+#. §1: `(-a) + (a + b)`
+#: Game.Levels.GroupWorld.L04_LeftCancellation
+msgid "Now that we have §0, its left and right sides should be equivalent. Have we proved anything in the past that proves something about expressions of the form §1?"
+msgstr ""
+
+#: Game.Levels.GroupWorld.L02_LeftIdentity
+msgid "Left Identity"
+msgstr ""
+
+#. §0: `rw [add_neg]`
+#: Game.Levels.GroupWorld.L06_RightIdentity
+msgid "Since the inverse (negative) is on the right, use §0."
+msgstr ""
+
+#: Game.Levels.GroupWorld.L08_UniqueInverse
+msgid "Time to cancel out inverses."
+msgstr ""
+
+#: Game.Levels.GroupWorld.L09_InverseOfZero
+msgid "Inverse of Zero"
+msgstr ""
+
+#: Game.Levels.GroupWorld.L07_UniqueIdentity
+msgid "We haven't had a logical implication in a while. How can we turn the hypothesis into an assumption?"
+msgstr ""
+
+#. §0: `a`
+#. §1: `(-a)`
+#: Game.Levels.GroupWorld.L06_RightIdentity
+msgid "This time, we have an §0 on the left of a §1. How can we cancel them out."
+msgstr ""
+
+#: Game.Levels.GroupWorld.L01_ZeroEqualsZero
+msgid "Zero Equals Zero"
+msgstr ""
+
 #: Game.Levels.GroupWorld
 msgid "Group World"
 msgstr ""
 
+#. §0: `0`
+#: Game.Levels.GroupWorld.L09_InverseOfZero
+msgid "Now, we can simply add §0 and its inverse together."
+msgstr ""
+
+#. §0: `0`
+#. §1: `0`
+#: Game.Levels.GroupWorld.L06_RightIdentity
+msgid "Congratulations! We finally know that our §0 is a true double-sided identity, and inverses are double sided as well! This means that, for any element and its inverse (or §1), the commutative property holds! However, this does not mean that commutativity is guaranteed for any pair of elements, as you'll see later."
+msgstr ""
+
+#. §0: $S$
+#. §1: $+$
+#. §2: $S$
+#. §3: $0$
+#. §4: $S$
+#. §5: $+$
+#. §6: $G$
+#. §7: $G=(S, +)$
+#: Game.Levels.GroupWorld
+msgid "The first mathematical structure most encounter first is a set, an unordered collection of unique elements. The only problem is, elements in a set don't inherently do anything. They just... *exist*. Let's change that.\n"
+"\n"
+"Let §0 be a set, then define some operation §1 on the elements of §2 (and assume an arbitrary element §3) such that the following three axioms are satisfied:\n"
+"1. **Associativity**: ∀ a b c : S, (a + b) + c = a + (b + c)\n"
+"2. **Left Identity**: ∀ a : S, 0 + a = a\n"
+"3. **Left Inverse**: ∀ a : S ∃ (-a) : S, (-a) + a = 0\n"
+"Then the set §4 and the operation §5 form a group §6. In other words, §7.\n"
+"\n"
+"Notice how few axioms there are. We don't even have commutativity or a right identity! Until now, we've gotten used to blindly assuming those facts in the integers and real numbers. But not anymore.\n"
+"\n"
+"In this world, we will use the three group axioms to prove several other facts we've taken for granted, and learn that, if sets are the atoms of mathematics, groups are the molecules."
+msgstr ""
+
+#: Game.Levels.GroupWorld.L04_LeftCancellation
+msgid "Now, «{h1}» should look like our goal. What tactic can we use to prove the goal using the assumption?"
+msgstr ""
+
+#: Game.Levels.GroupWorld.L07_UniqueIdentity
+msgid "Now we have to cancel out terms."
+msgstr ""
+
+#. §0: `(a)`
+#. §1: `(-a)`
+#. §2: `a + b`
+#. §3: `(-a)`
+#: Game.Levels.GroupWorld.L03_LeftInverseCancellation
+msgid "We want to cancel out the §0 with the §1, but they're not grouped together. Currently, the expression dictates that we must first add §2, and then only add §3. Do we have a theorem that can regroup terms?"
+msgstr ""
+
+#. §0: `0`
+#: Game.Levels.GroupWorld.L08_UniqueInverse
+msgid "Identity and inverse proofs seem to come in pairs... We must prove that, if two elements add to §0, the second is the inverse of the first."
+msgstr ""
+
+#. §0: `a + (-a) = 0`
+#: Game.Levels.GroupWorld.L09_InverseOfZero
+msgid "If we want to show that an element is the inverse of another, then we have to put the equation in the form §0. However, our expression already equals zero, so what can we add to the left side to put it in the required form?"
+msgstr ""
+
+#: Game.Levels.GroupWorld.L12_ShoesAndSocks
+msgid "Shoes and Socks"
+msgstr ""
+
+#: Game
+msgid "*Abstract Algebra, The Game*\n"
+"## Credits\n"
+"- **Game Design**: [Advayth Pashupati](https://github.com/AamindMandragora)\n"
+"- **Department**: [Mathematics at the University of Illinois](https://math.illinois.edu)\n"
+"- **Many Thanks To**: The lean4game team and their wonderful system!"
+msgstr ""
+
+#: Game.Levels.GroupWorld.L05_RightInverse
+msgid "Right Inverse"
+msgstr ""
+
+#. §0: `«{h1}»`
+#: Game.Levels.GroupWorld.L10_RightCancellation
+msgid "The assumption §0 now matches the goal exactly. How can we use it to prove the goal?"
+msgstr ""
+
+#: Game
+msgid "Abstract Algebra, the Game!"
+msgstr ""
+
+#: Game.Levels.GroupWorld.L05_RightInverse
+msgid "The expression in the parentheses should look very familliar. We can use a lemma from a past level to solve this."
+msgstr ""
+
+#. §0: `«{h}»`
+#: Game.Levels.GroupWorld.L04_LeftCancellation
+msgid "We'll have to add (-a) to both left sides to cancel out. But then, how do we know that that's equivalent? We'll need to create a new subgoal that will give us that fact, then prove it in one line. Our assumption §0 might be useful for that."
+msgstr ""
+
+#. §0: `a + b = a + c`
+#. §1: `b = c`
+#. §2: `a`
+#: Game.Levels.GroupWorld.L04_LeftCancellation
+msgid "This step is a complicated one. If we want to go from §0 to §1, what do we have to do to the §2s on the left?"
+msgstr ""
+
+#. §0: `rw [← zero_add (-0)]`
+#. §1: `0`
+#. §2: `(-0)`
+#: Game.Levels.GroupWorld.L09_InverseOfZero
+msgid "Use §0 to put a §1 on the left of the §2."
+msgstr ""
+
+#. §0: `have`
+#. §1: `P ∧ Q`
+#. §2: `have h : P := by tactic`
+#. §3: `P`
+#. §4: `h`
+#. §5: `P ∧ Q`
+#: Game.Metadata
+msgid "We can use §0 to introduce a smaller or slightly altered version of the goal which we then prove in one line, and that proof becomes a hypothesis we can use in the future. For example, for some goal of the form §1, §2 will use a tactic to prove §3, which then becomes a hypothesis §4 we can use to prove §5."
+msgstr ""
+
+#: Game.Levels.GroupWorld.L02_LeftIdentity
+msgid "Congrats! You just used your first group axiom! Here's to many more..."
+msgstr ""
+
+#. §0: `add_neg`
+#. §1: `neg_add`
+#: Game.Levels.GroupWorld.L05_RightInverse
+msgid "That was tough! You've just proved that left inverses are also right inverses, which many textbooks simply assume. In the future, you can cite this using §0.\n"
+"\n"
+"Recall that the left-inverse lemma is called §1; this is because of Lean naming convention to put the operand (neg) on the correct side of the operator (add)."
+msgstr ""
+
+#. §0: `(-a)`
+#. §1: `(a)`
+#: Game.Levels.GroupWorld.L03_LeftInverseCancellation
+msgid "Now that §0 and §1 are grouped together, we can use another group axiom to cancel them out."
+msgstr ""
+
+#: Game.Levels.GroupWorld.L08_UniqueInverse
+msgid "The parentheses will probably never be on our side. How can we fix them?"
+msgstr ""
+
+#. §0: `h`
+#. §1: `exact h`
+#: Game.Metadata
+msgid "When the goal is the exact same as some hypothesis §0, §1 will solve it."
+msgstr ""
+
+#: Game.Levels.GroupWorld.L10_RightCancellation
+msgid "Right Cancellation"
+msgstr ""
+
+#. §0: `add_left_cancel`
+#. §1: `(-(-a)) = a`
+#: Game.Levels.GroupWorld.L06_RightIdentity
+msgid "Unfortunately, we can't use §0 this time, as we don't know that §1. However, we can use similar steps! How do we fix our parentheses?"
+msgstr ""
+
+#: Game.Levels.GroupWorld.L09_InverseOfZero
+msgid "In the last level, we proved that every element has a unique double-sided inverse. Naturally, that includes the identity element. So what's the inverse of zero?"
+msgstr ""
+
+#. §0: `neg_add_cancel`
+#: Game.Levels.GroupWorld.L03_LeftInverseCancellation
+msgid "You've just proved your first derived lemma! We're slowly regaining the properties we used to take for granted. In the future, you'll be able to cite §0, bundling three steps into one! You'll use this a lot in the future."
+msgstr ""
+
+#. §0: `a`
+#: Game.Levels.GroupWorld.L05_RightInverse
+msgid "Now that we have that extra term, let's replace it with something. What cancels out with §0?"
+msgstr ""
+
+#. §0: `0 = 0`
+#. §1: `rfl`
+#. §2: `X = X`
+#: Game.Levels.GroupWorld.L01_ZeroEqualsZero
+msgid "Remember, we're just trying to prove that §0. We just introduced the §1 tactic that proves any goal of the form §2."
+msgstr ""
+
+#. §0: `b = (-a)`
+#. §1: `a`
+#. §2: `(-a)`
+#. §3: `«{h}»`
+#: Game.Levels.GroupWorld.L08_UniqueInverse
+msgid "If we want to show that §0, we'll need to both cancel out the §1 on the left and get a §2 term on the right. How can we set up and prove an assumption that an equation like that is equivalent to our hypothesis §3?"
+msgstr ""
+
+#: Game.Levels.GroupWorld.L08_UniqueInverse
+msgid "This time, we have zeroes on both sides. Can we get rid of them in one line?"
+msgstr ""
+
+#: Game.Levels.GroupWorld.L10_RightCancellation
+msgid "You have to remove the extra zeroes somehow so it matches the goal."
+msgstr ""
+
+#. §0: `e = 0`
+#. §1: `«{h}»`
+#: Game.Levels.GroupWorld.L07_UniqueIdentity
+msgid "Our end goal is to show that §0. Take a look at our assumption §1. How can we manipulate it to get a zero on the right side?"
+msgstr ""
+
+#. §0: `zero_add`
+#. §1: `Theorems`
+#. §2: `Group`
+#. §3: `rw`
+#: Game.Levels.GroupWorld.L02_LeftIdentity
+msgid "Welcome to level two! We are finally going to use one of our group axioms: left identity. For this game, we're calling it §0. You can learn more about it, and future theorems, by clicking on the §1 section on the right and choosing the §2 subsection. We've also unlocked a new tactic: §3, which stands for rewrite. If our goal looks exactly like one of the theorems we've proved, we can replace every instance of the left side of the theorem in the goal with the right side of the theorem, making both sides of the goal the same and proving it. You can learn more by checking the documentation."
+msgstr ""
+
+#: Game.Levels.GroupWorld.L04_LeftCancellation
+msgid "Left Cancellation"
+msgstr ""
+
+#. §0: `neg_add_cancel`
+#. §1: `rw [neg_add_cancel] at «{h1}»`
+#: Game.Levels.GroupWorld.L04_LeftCancellation
+msgid "We proved §0 last level! You can look at the docs to remind yourself what it does. Use §1."
+msgstr ""
+
+#: Game
+msgid "Abstract Algebra, the Game"
+msgstr ""
+
+#. §0: `rw [← add_assoc]`
+#. §1: `((-a) + a) + b`
+#: Game.Levels.GroupWorld.L03_LeftInverseCancellation
+msgid "We can use §0 to regroup the terms on the left to §1."
+msgstr ""
+
+#. §0: `rw [zero_add]`
+#: Game.Levels.GroupWorld.L03_LeftInverseCancellation
+#: Game.Levels.GroupWorld.L04_LeftCancellation
+#: Game.Levels.GroupWorld.L05_RightInverse
+#: Game.Levels.GroupWorld.L06_RightIdentity
+#: Game.Levels.GroupWorld.L06_RightIdentity
+#: Game.Levels.GroupWorld.L07_UniqueIdentity
+#: Game.Levels.GroupWorld.L07_UniqueIdentity
+#: Game.Levels.GroupWorld.L07_UniqueIdentity
+#: Game.Levels.GroupWorld.L07_UniqueIdentity
+#: Game.Levels.GroupWorld.L07_UniqueIdentity
+#: Game.Levels.GroupWorld.L07_UniqueIdentity
+#: Game.Levels.GroupWorld.L08_UniqueInverse
+#: Game.Levels.GroupWorld.L08_UniqueInverse
+#: Game.Levels.GroupWorld.L08_UniqueInverse
+#: Game.Levels.GroupWorld.L08_UniqueInverse
+#: Game.Levels.GroupWorld.L09_InverseOfZero
+#: Game.Levels.GroupWorld.L10_RightCancellation
+#: Game.Levels.GroupWorld.L10_RightCancellation
+#: Game.Levels.GroupWorld.L10_RightCancellation
+#: Game.Levels.GroupWorld.L10_RightCancellation
+#: Game.Levels.GroupWorld.L10_RightCancellation
+#: Game.Levels.GroupWorld.L10_RightCancellation
+msgid "Use §0."
+msgstr ""
+
 #: Game.Levels.GroupWorld.L06_RightIdentity
 msgid "Right Identity"
+msgstr ""
+
+#: Game.Levels.GroupWorld.L11_DoubleInverse
+msgid "It is finally time to prove what may be the most obvious property of all: the inverse of the inverse of some element in the group is that element."
+msgstr ""
+
+#. §0: `rw [neg_add_cancel] at «{h1}»`
+#. §1: `rw [neg_add_cancel, neg_add_cancel] at «{h1}»`
+#: Game.Levels.GroupWorld.L04_LeftCancellation
+msgid "Use §0 again! Alternatively, you could have used §1 to begin with."
+msgstr ""
+
+#: GameServer.RpcHandlers
+msgid "level completed! 🎉"
+msgstr ""
+
+#: Game
+msgid "This course is a basic introduction of undergraduate-level Abstract Algebra in Lean."
+msgstr ""
+
+#: Game.Levels.GroupWorld.L04_LeftCancellation
+msgid "This goal is in a specific form that makes it easy to move the left side into the assumptions using a specific tactic, which might be useful."
+msgstr ""
+
+#: Game.Levels.GroupWorld.L07_UniqueIdentity
+msgid "Finally, we'll clean up the zeroes."
+msgstr ""
+
+#. §0: `intro h`
+#: Game.Levels.GroupWorld.L08_UniqueInverse
+msgid "Let's move the hypothesis to the assumptions by using §0."
+msgstr ""
+
+#. §0: `(-a)`
+#: Game.Levels.GroupWorld.L10_RightCancellation
+msgid "We know that we have to add §0 to both sides to perform the cancellation, so make that your subgoal and try and prove it."
+msgstr ""
+
+#: Game.Levels.GroupWorld.L05_RightInverse
+msgid "What? A boss level? Already?? Whoops... This level is going to be hard. Originally, we only gave left inverses as a group axiom. It turns out that we can use those left inverses as right inverses too! So every inverse of an element, however many there are, can act as both a left and a right inverse. Feel free to use a hint or two to get started if you need to."
+msgstr ""
+
+#. §0: `b`
+#. §1: `(-a)`
+#. §2: `0`
+#: Game.Levels.GroupWorld.L08_UniqueInverse
+msgid "Now we can further simplify an unknown element §0 to be §1 if they add to §2! Every element in a group has one, and only one, corresponding inverse."
+msgstr ""
+
+#: Game.Levels.GroupWorld.L10_RightCancellation
+msgid "Now, regroup the terms on both sides."
+msgstr ""
+
+#. §0: `a + b = a + c`
+#. §1: `b = c`
+#. §2: `intro`
+#. §3: `hypothesis → conclusion`
+#. §4: `intro h`
+#. §5: `hypothesis`
+#. §6: `h`
+#. §7: `conclusion`
+#. §8: `exact`
+#. §9: `h`
+#. §10: `exact h`
+#. §11: `have`
+#. §12: `have`
+#. §13: `rw`
+#. §14: `Tactics`
+#: Game.Levels.GroupWorld.L04_LeftCancellation
+msgid "It should now be apparent that I'm not clever with names. Unfortunately, I'm also not clever with level design, which means that you have to learn three new tactics in one level. We're trying to prove that, if §0, then §1 by force. In other words, left cancellation.\n"
+"\n"
+"The first new tactic to learn is §2. If our goal is in the form §3, then we can §4 to make §5 one of our assumptions, labelled §6. Our goal then becomes §7.\n"
+"\n"
+"The second new tactic to learn is §8. If our goal looks exactly like one of our assumptions §9, then we can use §10 to prove it in one step.\n"
+"\n"
+"The final new tactic is called §11. This tactic creates a new subgoal, which you then have to prove. Once you do, you can use it as an assumption to prove the main goal. §12 and §13 are two of the most important and useful tactics in Lean.\n"
+"\n"
+"You can read the documentation for these three tactics in the §14 section on the right. Good luck!"
+msgstr ""
+
+#. §0: `e`
+#. §1: `G`
+#. §2: `e = 0`
+#: Game.Levels.GroupWorld.L07_UniqueIdentity
+msgid "Our construction of a group only assumes that there is some element in the underlying set that acts as an identity. What if there's more than one identity? You must try and prove that for some identity element §0 in §1, §2."
+msgstr ""
+
+#: Game.Levels.GroupWorld.L08_UniqueInverse
+msgid "Unique Inverse"
+msgstr ""
+
+#: Game.Levels.GroupWorld.L10_RightCancellation
+msgid "We're back to having logical implications as goals, so what tactic should we use?"
+msgstr ""
+
+#: Game.Levels.GroupWorld.L06_RightIdentity
+msgid "How can we get rid of that pesky zero?"
+msgstr ""
+
+#. §0: `zero_add`
+#. §1: `rw [zero_add]`
+#: Game.Levels.GroupWorld.L02_LeftIdentity
+msgid "Remember, we just need to cite the §0 axiom, which we can do using §1."
+msgstr ""
+
+#: Game.Levels.GroupWorld.L01_ZeroEqualsZero
+msgid "Good job! We can use this exact same tactic to prove that any element of a group equals itself. This will be very useful in the levels to come."
+msgstr ""
+
+#: Game.Levels.GroupWorld.L11_DoubleInverse
+msgid "Double Inverse"
+msgstr ""
+
+#. §0: `«{h1}»`
+#: Game.Levels.GroupWorld.L07_UniqueIdentity
+msgid "Our assumption §0 looks familiar, doesn't it. How can we use it to prove the goal?"
 msgstr ""

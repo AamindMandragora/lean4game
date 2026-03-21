@@ -8,7 +8,7 @@ Introduction
 
 This course is a basic introduction of undergraduate-level Abstract Algebra in Lean. We will cover structures such as groups, rings, integral domains, and fields, as well as relations between them like homomorphisms and isomorphisms.
 
-**Important**: Please note that this course is unfinished and made by [an undergraduate](https://www.linkedin.com/in/advayth-pashupati/), and should be taken with a grain of salt.
+**Important**: Please note that this course is unfinished and made by [an undergraduate](https://www.linkedin.com/in/advayth-pashupati/), and should be taken with a grain of salt. If you want to submit a request for anything, make an issue [here](https://github.com/AamindMandragora/lean4game/issues). You'll need a GitHub account.
 "
 
 Info "
