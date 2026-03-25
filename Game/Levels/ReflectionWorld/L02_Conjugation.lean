@@ -11,10 +11,13 @@ Title "Conjugation"
 
 Introduction "TODO"
 
+/-- `op_conj (a b : AbelianGroup)` says `a * b * a⁻¹ = b`. -/
+TheoremDoc op_conj as "op_conj" in "AbelianGroup"
+
 Statement op_conj (a b : AbelianGroup) : a * b * a⁻¹ = b := by
   Hint (hidden := true) "TODO"
   Hint (hidden := true) "TODO"
-  rw [op_comm]
+  rw [op_comm a]
   Hint (hidden := true) "TODO"
   Hint (hidden := true) "TODO"
   rw [op_assoc b]
@@ -26,3 +29,5 @@ Statement op_conj (a b : AbelianGroup) : a * b * a⁻¹ = b := by
   rw [op_id]
 
 Conclusion "TODO"
+
+NewTheorem op_comm

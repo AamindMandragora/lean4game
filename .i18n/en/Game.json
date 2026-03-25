@@ -97,6 +97,7 @@
  "That was tough! You've just proved that left inverses are also right inverses, which many textbooks simply assume. In the future, you can cite this using §0.\n\nRecall that the left-inverse lemma is called §1; this is because of Lean naming convention to put the operand (inv) on the correct side of the operator (op).":
  "",
  "That simplified the left side. Now, how do we simplify the right?": "",
+ "TODO": "",
  "Since the inverse is on the left, use §0.": "",
  "Simplification Practice": "",
  "Shoes and Socks": "",
@@ -105,6 +106,7 @@
  "Right Cancellation": "",
  "Remember, we're just trying to prove that §0. We just introduced the §1 tactic that proves any goal of the form §2.":
  "",
+ "Reflection World": "",
  "Perform the cancellation.": "",
  "Our subgoal will look like §0. Is there a way we can prove that true in a single line?":
  "",
@@ -174,6 +176,7 @@
  "Finally, cancel the other pair of inverses.": "",
  "Finally, cancel out the §0 and §1.": "",
  "Double Inverse": "",
+ "Conjugation": "",
  "Congratulations! We finally know that our §0 is a true double-sided identity, and inverses are double sided as well! This means that, for any element and its inverse (or §1), the commutative property holds! However, this does not mean that commutativity is guaranteed for any pair of elements, as you'll see later.":
  "",
  "Congrats! You just used your first group axioms! We're at the stage of proofs where we have to know things about groups to prove more things about groups, so we'll be using §0 a lot.":
@@ -181,6 +184,9 @@
  "Congrats! Now we know that every group has a unique, double-sided identity! We can use this lemma, §0, to simplify mystery elements as long as they satisfy the hypothesis.":
  "",
  "Congrats! Let's look back on what we've proved about inverses of groups so far. We know that every element §0 has exactly one double-sided inverse §1, and the inverse of §2 is §3 itself! Exciting stuff. And we derived all of this from associativity, left inverses, and left identity. It really goes to show you just how powerful each axiom is, and how multiplicative their power is. We only needed three to create such a complex mathematical structure. Now, onto the final level!":
+ "",
+ "Commutator": "",
+ "An **abelian group** is a group where the operation is commutative. That is, in addition to the three group axioms, it satisfies:\n\n- **Commutativity** (§0): §1\n\nThis extra axiom has powerful consequences: conjugation becomes trivial, the commutator vanishes, and inverses distribute symmetrically.":
  "",
  "Abstract Algebra, the Game!": "",
  "Abstract Algebra, the Game": "",

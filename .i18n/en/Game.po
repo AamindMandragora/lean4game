@@ -23,6 +23,8 @@ msgstr "Project-Id-Version: Game v4.23.0\n"
 #: Game.Levels.GroupWorld.L10_RightCancellation
 #: Game.Levels.GroupWorld.L11_DoubleInverse
 #: Game.Levels.GroupWorld.L12_ShoesAndSocks
+#: Game.Definitions.Group.AbelianGroup
+#: Game.Levels.ReflectionWorld.L02_Conjugation
 msgid "§0 says §1."
 msgstr ""
 
@@ -163,6 +165,32 @@ msgstr ""
 msgid "Use §0 to replace the §1 with §2."
 msgstr ""
 
+#: Game.Levels.ReflectionWorld.L01_Commutator
+#: Game.Levels.ReflectionWorld.L01_Commutator
+#: Game.Levels.ReflectionWorld.L01_Commutator
+#: Game.Levels.ReflectionWorld.L01_Commutator
+#: Game.Levels.ReflectionWorld.L01_Commutator
+#: Game.Levels.ReflectionWorld.L01_Commutator
+#: Game.Levels.ReflectionWorld.L01_Commutator
+#: Game.Levels.ReflectionWorld.L01_Commutator
+#: Game.Levels.ReflectionWorld.L01_Commutator
+#: Game.Levels.ReflectionWorld.L01_Commutator
+#: Game.Levels.ReflectionWorld.L01_Commutator
+#: Game.Levels.ReflectionWorld.L01_Commutator
+#: Game.Levels.ReflectionWorld.L02_Conjugation
+#: Game.Levels.ReflectionWorld.L02_Conjugation
+#: Game.Levels.ReflectionWorld.L02_Conjugation
+#: Game.Levels.ReflectionWorld.L02_Conjugation
+#: Game.Levels.ReflectionWorld.L02_Conjugation
+#: Game.Levels.ReflectionWorld.L02_Conjugation
+#: Game.Levels.ReflectionWorld.L02_Conjugation
+#: Game.Levels.ReflectionWorld.L02_Conjugation
+#: Game.Levels.ReflectionWorld.L02_Conjugation
+#: Game.Levels.ReflectionWorld.L02_Conjugation
+#: Game.Levels.ReflectionWorld
+msgid "TODO"
+msgstr ""
+
 #: Game.Levels.GroupWorld.L10_RightCancellation
 msgid "A while ago, we proved left cancellation. Now that we know our identity and inverses are double-sided, let's try and prove right cancellation!"
 msgstr ""
@@ -190,6 +218,10 @@ msgstr ""
 #. §1: `a⁻¹`
 #: Game.Levels.GroupWorld.L06_RightIdentity
 msgid "This time, we have an §0 on the right of an §1. How can we cancel them out?"
+msgstr ""
+
+#: Game.Levels.ReflectionWorld
+msgid "Reflection World"
 msgstr ""
 
 #. §0: `rw [inv_op]`
@@ -471,6 +503,10 @@ msgstr ""
 msgid "We want to show that §0 is an inverse of §1. Have we proven a lemma in the past that might be applicable here?"
 msgstr ""
 
+#: Game.Levels.ReflectionWorld.L01_Commutator
+msgid "Commutator"
+msgstr ""
+
 #. §0: `have`
 #. §1: `P ∧ Q`
 #. §2: `have h : P := by tactic`
@@ -621,6 +657,16 @@ msgstr ""
 msgid "How can we get rid of that pesky identity?"
 msgstr ""
 
+#. §0: `op_comm`
+#. §1: `a * b = b * a`
+#: Game.Definitions.Group.MyAbelianGroup
+msgid "An **abelian group** is a group where the operation is commutative. That is, in addition to the three group axioms, it satisfies:\n"
+"\n"
+"- **Commutativity** (§0): §1\n"
+"\n"
+"This extra axiom has powerful consequences: conjugation becomes trivial, the commutator vanishes, and inverses distribute symmetrically."
+msgstr ""
+
 #. §0: `«{h1}»`
 #. §1: `a⁻¹ * (a * b)`
 #: Game.Levels.GroupWorld.L04_LeftCancellation
@@ -699,6 +745,10 @@ msgstr ""
 msgid "That was tough! You've just proved that left inverses are also right inverses, which many textbooks simply assume. In the future, you can cite this using §0.\n"
 "\n"
 "Recall that the left-inverse lemma is called §1; this is because of Lean naming convention to put the operand (inv) on the correct side of the operator (op)."
+msgstr ""
+
+#: Game.Levels.ReflectionWorld.L02_Conjugation
+msgid "Conjugation"
 msgstr ""
 
 #. §0: `(a * b)⁻¹ = a⁻¹ * b⁻¹`

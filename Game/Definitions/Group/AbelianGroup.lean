@@ -1,10 +1,7 @@
+import Game.Definitions.Group.Group
 import Game.Definitions.Group.MyAbelianGroup
 
 variable {AbelianGroup : Type} [MyAbelianGroup AbelianGroup]
-
-instance : Mul AbelianGroup where mul := MyGroup.op
-instance : One AbelianGroup where one := MyGroup.id
-instance : Inv AbelianGroup where inv := MyGroup.inv
 
 theorem op_comm (a b : AbelianGroup) : a * b = b * a := MyAbelianGroup.op_comm a b
 
