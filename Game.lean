@@ -1,4 +1,5 @@
 import Game.Levels.GroupWorld
+import Game.Levels.ReflectionWorld
 
 -- Here's what we'll put on the title screen
 Title "Abstract Algebra, the Game"
@@ -25,6 +26,8 @@ CaptionShort "Abstract Algebra, the Game!"
 CaptionLong "This course is a basic introduction of undergraduate-level Abstract Algebra in Lean."
 -- Prerequisites "" -- add this if your game depends on other games
 -- CoverImage "images/cover.png"
+
+Dependency GroupWorld → ReflectionWorld
 
 /-! Build the game. Show's warnings if it found a problem with your game. -/
 MakeGame

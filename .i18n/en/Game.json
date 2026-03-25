@@ -1,4 +1,4 @@
-{"§0 stands for rewrite. Let §1 and §2 be the left and right hand sides of some §3, then §4 replaces every instance of §5 in the goal with §6. If the goal instead has §7s that we want to replace with §8, we can do §9 (the arrow is typed using \\\\l). We can also do §10 to replace every instance of §11 in the hypothesis §12 with §13. There actually is a tactic called §14, but the difference is that §15 inherently attemps to use §16 at the end, which saves a line of proof and renders the former tactic obsolete. If §17's hypothesis includes a variable §18, then instead of letting Lean try and choose the first valid §19 in the proof, we can specify it ourselves using §20, where §21 is the variable we wanted to match. If §22 has multiple variables, we can specify all of them sequentially using §23. Similarly, if we have multiple §24s we want to replace, we can use §25.":
+{"§0 stands for rewrite. Let §1 and §2 be the left and right hand sides of some §3, then §4 replaces every instance of §5 in the goal with §6. If the goal instead has §7s that we want to replace with §8, we can do §9 (the arrow is typed using \\\\l). We can also do §10 to replace every instance of §11 in the hypothesis §12 with §13. Basically, if we have some assumption that §14, §15 will substitute an §16 for a §17 in the goal. There actually is a tactic called §18, but the difference is that §19 inherently attemps to use §20 at the end, which saves a line of proof and renders the former tactic obsolete. If §21's hypothesis includes a variable §22, then instead of letting Lean try and choose the first valid §23 in the proof, we can specify it ourselves using §24, where §25 is the variable we wanted to match. If §26 has multiple variables, we can specify all of them sequentially using §27. Similarly, if we have multiple §28s we want to replace, we can use §29.":
  "",
  "§0 stands for reflect. One of the properties of equality (and every equivalence relation, if you know what those are) is reflexivity, which means that every element for which the relation is defined on naturally equals itself. In other words, §1. For any goal of that form, this tactic will instantly prove it.":
  "",
@@ -8,45 +8,46 @@
  "level completed! 🎉": "",
  "level completed with warnings… 🎭": "",
  "intermediate goal solved! 🎉": "",
- "Zero Equals Zero": "",
  "You've reached the end of Group World! Congratulations! I hope now you have a better understanding of this molecular mathematical structure and its power. In future worlds, we will explore different types of groups and their properties, and what happens when we give a group a second operator.":
  "",
  "You've just proved your first derived theorem! We're slowly regaining the properties we used to take for granted. In the future, you'll be able to cite §0, bundling three steps into one! You'll use this a lot in the future.":
  "",
  "You've just proved left cancellation, another really useful lemma! Now, onto something even more exciting!":
  "",
- "You have to remove the extra zeroes somehow so it matches the goal.": "",
+ "You have to remove the extra identities somehow so it matches the goal.": "",
  "When the goal is the exact same as some hypothesis §0, §1 will solve it.": "",
  "When the goal is in the form §0, §1 will create a hypothesis §2 that is the proposition §3, turning the goal into §4.":
  "",
  "What? A boss level? Already?? Whoops... This level is going to be hard. Originally, we only gave left inverses as a group axiom. It turns out that we can use those left inverses as right inverses too! So every inverse of an element, however many there are, can act as both a left and a right inverse. Feel free to use a hint or two to get started if you need to.":
  "",
- "Welcome to level two! We are finally going to use some of our group axioms: left identity and left inverse. For this game, we're calling them §0 and §1. You can learn more about them, and future theorems, by clicking on the §2 section on the right and choosing the §3 subsection.\n\nWe've also unlocked a new tactic: §4, which stands for rewrite. Think of this like performing a substitution. If we know from an assumption or theorem that something in our goal §5 is equivalent to another thing §6, we can call §7 to replace an instance of §8 with §9. §10 also implicitly calls §11 at the end to save you a step of proof! You can (and should!) learn more by checking the documentation.":
+ "Welcome to level two! We are finally going to use some of our group axioms: left identity and left inverse. For this game, we're calling them §0 and §1. You can learn more about them, and future theorems, by clicking on the §2 section on the right and choosing the §3 subsection.\n\nWe've also unlocked a new tactic: §4, which stands for rewrite. Think of this like performing a substitution. If we know from an assumption or theorem that something in our goal §5 is equivalent to another thing §6, we can call §7 to replace an instance of §8 with §9. §10 also implicitly calls §11 at the end to save you a step of proof! You can (and should!) learn more by checking the documentation.\n\nAlso, to type ⁻¹ to denote the inverse of an element, you can write \\\\-1.":
  "",
  "Welcome to level one! Our goal is to prove that, inside some group §0, §1. Seems pretty simple, right? Yeah, there's no trick here. Since groups are based off sets, each element in the group will be unique and thus an equality operator is defined. The property that every element equals itself is called **reflexivity**.\n\nIn Lean, we can cite the property using the §2 tactic. You can learn more about it, and future other tactics, by clicking on the §3 section on the right and selecting it. (I say can, but you really should, as there's extra information in the docs that will be necessary.)":
  "",
  "We're now left with §0. What group axiom can we use to remove the §1?": "",
  "We're back to having logical implications as goals, so what tactic should we use?":
  "",
- "We'll have to add (-a) to both left sides to cancel out. But then, how do we know that that's equivalent? We'll need to create a new subgoal that will give us that fact, then prove it in one line. Our assumption §0 might be useful for that.":
+ "We'll have to multiply by §0 on both left sides to cancel out. But then, how do we know that that's equivalent? We'll need to create a new subgoal that will give us that fact, then prove it in one line. Our assumption §1 might be useful for that.":
  "",
  "We want to show that §0 is an inverse of §1. Have we proven a lemma in the past that might be applicable here?":
  "",
- "We want to cancel out the §0 with the §1, but they're not grouped together. Currently, the expression dictates that we must first add §2, and then only add §3. Do we have a theorem that can regroup terms?":
+ "We want to cancel out the §0 with the §1, but they're not grouped together. Currently, the expression dictates that we must first multiply §2, and then only multiply by §3. Do we have a theorem that can regroup terms?":
  "",
  "We proved §0 last level! You can look at the docs to remind yourself what it does. Use §1.":
  "",
- "We must add §0 to the right on both sides! Let's call that our subgoal. How can we use our assumption to prove that adding §1 to both sides preserves equality?":
+ "We now know that §0 is its own inverse, which begs the question: can any element be its own inverse? Yes! We've been working with the arbitrary group, but choosing a specific one can allow you to find more properties specific to it.":
+ "",
+ "We must multiply by §0 on the right on both sides! Let's call that our subgoal. How can we use our assumption to prove that multiplying by §1 on both sides preserves equality?":
  "",
  "We know we'd like to cancel out the §0 and the §1, but the parentheses aren't letting us. How can we fix that?":
  "",
- "We know that we have to add §0 to both sides to perform the cancellation, so make that your subgoal and try and prove it.":
+ "We know that we have to multiply by §0 on both sides to perform the cancellation, so make that your subgoal and try and prove it.":
  "",
  "We know that the inverse of §0 is §1 and the inverse of §2 is §3, so we can §4 to place it on the right of both expressions.":
  "",
- "We know know that §0 is its own inverse, which begs the question: can any element be its own inverse? Yes! We've been working with the arbitrary group, but choosing a specific one can allow you to find more properties specific to it.":
- "",
  "We haven't had a logical implication in a while. How can we turn the hypothesis into an assumption?":
+ "",
+ "We have a handy lemma from a past level that can simplify the left side in one step.":
  "",
  "We definitely want to get rid of that §0 somehow, and it'd be nice if we could also remove the §1 to get the goal to §2. Is there any lemma we could apply to perform this cancellation?":
  "",
@@ -56,6 +57,8 @@
  "We can use §0 to introduce a smaller or slightly altered version of the goal which we then prove in one line, and that proof becomes a hypothesis we can use in the future. For example, for some goal of the form §1, §2 will use a tactic to prove §3, which then becomes a hypothesis §4 we can use to prove §5.":
  "",
  "We can finally cancel terms on both sides! Only two more levels to go.": "",
+ "Use §0. This creates a subgoal of the form we specified earlier, then proves it by substituting §1 for §2 using the assumption §3.":
+ "",
  "Use §0.": "",
  "Use §0 to turn the goal into §1, the corresponding hypothesis.": "",
  "Use §0 to simplify it to §1.": "",
@@ -64,23 +67,18 @@
  "Use §0 to replace an instance of §1 with §2.": "",
  "Use §0 to replace an instance of §1 with §2 and implicitly call §3 to instantly prove that §4.":
  "",
- "Use §0 to put this goal in the form of §1's hypothesis, using §2 as the metavariable we will cancel with.":
+ "Use §0 to put this goal in the form of §1's hypothesis, using §2 as the element we will cancel with.":
  "",
  "Use §0 to put a §1 in front.": "",
+ "Use §0 to multiply by §1 on the right of both sides.": "",
  "Use §0 to move §1 into the assumptions category and make the goal §2.": "",
- "Use §0 to add an §1 term to the right of both sides.": "",
  "Use §0 from level three!": "",
  "Use §0 again! Alternatively, you could have used §1 to begin with.": "",
- "Use §0 This creates a subgoal of the form we specified earlier, then proves it by substituting §1 for §2 using the assumption §3.":
- "",
  "Unique Inverse": "",
  "Unique Identity": "",
  "Unfortunately, we can't use §0 this time, as we don't know that §1. However, we can use similar steps! How do we fix our parentheses?":
  "",
- "Time to cancel out inverses.": "",
- "This time, we have zeroes on both sides. Can we get rid of them in one line?":
- "",
- "This time, we have an §0 on the right of a §1. How can we cancel them out?":
+ "This time, we have an §0 on the right of an §1. How can we cancel them out?":
  "",
  "This step is a complicated one. If we want to go from §0 to §1, what do we have to do to the §2s on the left?":
  "",
@@ -90,17 +88,16 @@
  "",
  "The trick here is to insert something that can eventually cancel out with something on the left. But to do that, we need an extra term to manipulate. How can we add an extra term to the left that doesn't change the value of the expression?":
  "",
- "The parentheses will probably never be on our side. How can we fix them?": "",
  "The first mathematical structure most encounter first is a set, an unordered collection of unique elements. The only problem is, elements in a set don't inherently do anything. They just... *exist*. Let's change that.\n\nLet §0 be a set, then define some operation §1 on the elements of §2 (and assume an arbitrary element §3) such that the following three axioms are satisfied:\n1. **Associativity**: §4\n2. **Left Identity**: §5\n3. **Left Inverse**: §6\n\nThen the set §7 and the operation §8 form a group §9. In other words, §10.\n\nNotice how few axioms there are. We don't even have commutativity or a right identity! Until now, we've gotten used to blindly assuming those facts in the integers and real numbers. But not anymore.\n\nIn this world, we will use the three group axioms to prove several other facts we've taken for granted, and learn that, if sets are the atoms of mathematics, groups are the molecules.\n\nHowever, before we can do that, we should talk about Lean. Lean is an interactive theorem prover. Each step in a proof is called a §11, and each proven or given statement is called a theorem. Lemmas will also be referred to as theorems as there's no difference between the two except size.\n\nInterestingly, axioms will also be referred to as theorems. This is because, while axioms are the building blocks and cannot be proven, the choice of which statements to use as axioms is entirely up to the person making the system.\n\nFor example, some people choose to use right identity and inverse as their group axioms, and some choose to use double-sided inverses. All three choices produce the exact same group structure, but if you choose to assume right inverses, you will then have to prove left inverses. Just because a statement is an axiom doesn't mean that it isn't provable in a slightly different but functionally identitcal system.\n\nYou'll see later that some §12 stand on their own to prove statements of a specific form, while some rely on already-proven §13 to simplify the problem.\n\nWhen you attempt a proof in Lean, think of it the same way we do regular algebra problems: if we needed to show that §14 given §15, we would first substitute §16 for §17, then §18 for §19, then use an algebra rule to simplify, ending up with §20, which we know is true. Similarly, we will have to use a sequence of tactics to slowly get our goal to be of a form that we know is inherently true from our assumptions, like §21.":
  "",
- "The expression in the parentheses should look very familliar. We can use a lemma from a past level to solve this.":
+ "The expression in the parentheses should look very familiar. We can use a lemma from a past level to solve this.":
  "",
  "The assumption §0 now matches the goal exactly. How can we use it to prove the goal?":
  "",
- "That was tough! You've just proved that left inverses are also right inverses, which many textbooks simply assume. In the future, you can cite this using §0.\n\nRecall that the left-inverse lemma is called §1; this is because of Lean naming convention to put the operand (neg) on the correct side of the operator (add).":
+ "That was tough! You've just proved that left inverses are also right inverses, which many textbooks simply assume. In the future, you can cite this using §0.\n\nRecall that the left-inverse lemma is called §1; this is because of Lean naming convention to put the operand (inv) on the correct side of the operator (op).":
  "",
  "That simplified the left side. Now, how do we simplify the right?": "",
- "Since the inverse (negative) is on the left, use §0.": "",
+ "Since the inverse is on the left, use §0.": "",
  "Simplification Practice": "",
  "Shoes and Socks": "",
  "Right Inverse": "",
@@ -111,12 +108,13 @@
  "Perform the cancellation.": "",
  "Our subgoal will look like §0. Is there a way we can prove that true in a single line?":
  "",
- "Our end goal is to show that §0. Take a look at our assumption §1. How can we manipulate it to get a zero on the right side?":
+ "Our end goal is to show that §0. Take a look at our assumption §1. How can we manipulate it to get a §2 on the right side?":
  "",
  "Our construction of a group only assumes that there is some element in the underlying set that acts as an identity. What if there's more than one identity? You must try and prove that for some identity element §0 in §1, §2.":
  "",
  "Our assumption §0 looks familiar, doesn't it? How can we use it to prove the goal?":
  "",
+ "One Equals One": "",
  "Once again, we have a goal in the form of a logical implication. How can we simplify it?":
  "",
  "Once again, the parentheses aren't on our side. Let's fix that.": "",
@@ -124,19 +122,21 @@
  "",
  "Now, «{h1}» should look like our goal. What tactic can we use to prove the goal using the assumption?":
  "",
- "Now, we can simply add §0 and its inverse §1 together.": "",
+ "Now, we can simply multiply §0 by itself.": "",
  "Now, this one will look a little weird. Why isn't §0? Two reasons. The first is that we don't have commutativity, so we can't say that §1.\n\nThe second will take some imagination. Pretend §2 is the action of putting your socks on, and §3 is the action of putting your shoes on. Then, §4 would mean putting your socks on first, then putting your shoes on. How would you then take them off?\n\nObviously, you can't take your socks off while your shoes are still on, so you take your shoes off first (which is §5), then take your socks off (which is §6). Therefore, §7.\n\nUnfortunately, that argument isn't good enough for Lean. Try and make one that is.":
  "",
  "Now, the second half of the pair. And with it, a new tactic! If we have a lemma in the form of a logical implication (§0), and our goal is §1, then we know that if §2 holds, our goal must also hold. This means that we can just prove §3 instead. §4 will replace the goal in the form of §5's conclusion §6 with its hypothesis §7. We can also §8 where §9 is §10 to turn it into §11. Using this, we must prove that the left identity §12 also serves as a right identity.":
  "",
  "Now, regroup the terms on both sides.": "",
- "Now, do we have anything that can help us prove that §0?.": "",
+ "Now, do we have anything that can help us prove that §0?": "",
+ "Now we need to clean up the right side. How can we get rid of the identity?":
+ "",
  "Now we have to cancel out terms.": "",
- "Now we can further simplify an unknown element §0 to be §1 if they add to §2! Every element in a group has one, and only one, corresponding inverse.":
+ "Now we can further simplify an unknown element §0 to be §1 if they multiply to §2! Every element in a group has one, and only one, corresponding inverse.":
  "",
  "Now that §0 and §1 are grouped together, we can use another group axiom to cancel them out.":
  "",
- "Now that we have §0, its left and right sides should be equivalent. Have we proved anything in the past that proves something about expressions of the form §1?":
+ "Now that we have §0, its left and right sides should be simplifiable. Have we proved anything in the past that proves something about expressions of the form §1?":
  "",
  "Now that we have that extra term, let's replace it with something. What cancels out with §0?":
  "",
@@ -149,28 +149,28 @@
  "",
  "It might be nice to cancel out that §0 somehow. Have we proven anything in the past that might be applicable?":
  "",
- "It might be a good idea to work from inside the parentheses. Is there an axiom we have that can simplify that expression?`.":
+ "It might be a good idea to work from inside the parentheses. Is there an axiom we have that can simplify that expression?":
  "",
- "It is finally time to prove what may be the most obvious property of all: the inverse of the inverse of some element in the group is that element.":
+ "It is finally time to prove what may be the most useful and obvious theorem of them all: taking the inverse of an element twice results in that element.":
  "",
  "Is §0 the inverse of anything? Can we use it to cancel out with anything?":
  "",
- "Inverse of Zero": "",
- "In the last level, we proved that every element has a unique double-sided inverse. Naturally, that includes the identity element. So what's the inverse of zero? And what's zero the inverse of?":
+ "Inverse of Identity": "",
+ "In the last level, we proved that every element has a unique double-sided inverse. Naturally, that includes the identity element. So what's the inverse of §0? And what's §1 the inverse of?":
  "",
- "If we want to show that §0, we'll need to both cancel out the §1 on the left and get a §2 term on the right. How can we set up and prove an assumption that an equation like that is equivalent to our hypothesis §3?":
+ "If we want to show that §0, we'll need to both cancel out the §1 on the left and get an §2 term on the right. How can we set up and prove an assumption that an equation like that is equivalent to our hypothesis §3?":
  "",
- "Identity and inverse proofs seem to come in pairs... We must prove that, if two elements add to §0, the second is the inverse of the first.":
+ "Identity and inverse proofs seem to come in pairs... We must prove that, if two elements multiply to §0, the second is the inverse of the first.":
  "",
- "How can we get rid of that pesky zero?": "",
+ "How can we get rid of that pesky identity?": "",
  "Have we proven anything about expressions that look like the one in the parentheses?":
  "",
  "Group World": "",
  "Good job! We can use this exact same tactic to prove that any element of a group equals itself. In future proofs, try and manipulate the goal to be in the form §0, then a call to §1 will prove it!":
  "",
- "For this level, you'll have to use all three group axioms. As always, click on §0 -> §1 to see what you've unlocked. After this level, you'll be able to use this fact in all future proofs without redoing the steps. We will attempt to prove that, if we have an expression §2, we can add §3 to the left to cancel out the §4.\n\nA quirk of §5 is that, for some hypothesis §6, §7 will only attempt to replace an §8 with a §9. If we wanted to do the opposite, we'd have to reverse the hypothesis. We can do this by typing a §10 (\\\\l) right before §11.\n\nFor the rest of the levels in this world, I'll provide a complete set of steps given to you behind hints in case you get stuck. However, I'd like it if you used them as little as possible, because it's not great for learning if you're just copying down my proof without thinking about it first.":
+ "For this level, you'll have to use all three group axioms. As always, click on §0 -> §1 to see what you've unlocked. After this level, you'll be able to use this fact in all future proofs without redoing the steps. We will attempt to prove that, if we have an expression §2, we can multiply by §3 on the left to cancel out the §4.\n\nA quirk of §5 is that, for some hypothesis §6, §7 will only attempt to replace an §8 with a §9. If we wanted to do the opposite, we'd have to reverse the hypothesis. We can do this by typing a §10 (\\\\l) right before §11.\n\nFor the rest of the levels in this world, I'll provide a complete set of steps given to you behind hints in case you get stuck. However, I'd like it if you used them as little as possible, because it's not great for learning if you're just copying down my proof without thinking about it first.":
  "",
- "Finally, we'll clean up the zeroes.": "",
+ "Finally, we'll clean up the identity.": "",
  "Finally, cancel the other pair of inverses.": "",
  "Finally, cancel out the §0 and §1.": "",
  "Double Inverse": "",
@@ -185,6 +185,8 @@
  "Abstract Algebra, the Game!": "",
  "Abstract Algebra, the Game": "",
  "A while ago, we proved left cancellation. Now that we know our identity and inverses are double-sided, let's try and prove right cancellation!":
+ "",
+ "A **group** is a set §0 equipped with an operation §1, an identity element §2, and an inverse operation §3, satisfying three axioms:\n\n- **Associativity** (§4): §5\n- **Left identity** (§6): §7\n- **Left inverse** (§8): §9\n\nAll other group properties — right identity, right inverse, uniqueness, cancellation — are derived from these three axioms in Group World.":
  "",
  "*Abstract Algebra, The Game*\n## Credits\n- **Game Design**: [Advayth Pashupati](https://github.com/AamindMandragora)\n- **Department**: [Mathematics at the University of Illinois](https://math.illinois.edu)\n- **Many Thanks To**: The lean4game team and their wonderful system!":
  "",
