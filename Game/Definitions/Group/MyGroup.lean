@@ -1,12 +1,12 @@
 import GameServer.Commands
 
-class MyGroup (G : Type) :=
-  (op : G → G → G)
-  (id : G)
-  (inv : G → G)
-  (op_assoc : ∀ a b c : G, op (op a b) c = op a (op b c))
-  (id_op : ∀ g : G, op id g = g)
-  (inv_op : ∀ g : G, op (inv g) g = id)
+class MyGroup (G : Type) where
+  op : G → G → G
+  id : G
+  inv : G → G
+  op_assoc : ∀ a b c : G, op (op a b) c = op a (op b c)
+  id_op : ∀ g : G, op id g = g
+  inv_op : ∀ g : G, op (inv g) g = id
 
 /-- A **group** is a set `G` equipped with an operation `*`, an identity element `1`, and an inverse operation `⁻¹`, satisfying three axioms:
 

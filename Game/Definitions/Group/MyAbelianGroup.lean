@@ -1,7 +1,7 @@
 import Game.Definitions.Group.MyGroup
 
-class MyAbelianGroup (G : Type) extends MyGroup G :=
-  (op_comm : ∀ a b : G, op a b = op b a)
+class MyAbelianGroup (G : Type) extends MyGroup G where
+  op_comm : ∀ a b : G, op a b = op b a
 
 /-- An **abelian group** is a group where the operation is commutative. That is, in addition to the three group axioms, it satisfies:
 
