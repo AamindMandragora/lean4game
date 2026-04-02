@@ -1,5 +1,5 @@
 import Game.Metadata
-import Game.Definitions.Group.AbelianGroup
+import Game.Documentation.Group.AbelianGroup
 import Game.Levels.ReflectionWorld.L01_Commutator
 
 variable {AbelianGroup : Type} [MyAbelianGroup AbelianGroup]

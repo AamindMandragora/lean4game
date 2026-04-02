@@ -1,4 +1,4 @@
-import Game.Definitions.Group.MyAbelianGroup
+import Game.Documentation.Group.MyAbelianGroup
 
 inductive Z4 : Type
   | zero | one | two | three

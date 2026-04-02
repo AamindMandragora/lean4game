@@ -1,5 +1,5 @@
 import Game.Metadata
-import Game.Definitions.Group.Group
+import Game.Documentation.Group.Group
 import Game.Levels.GroupWorld.L10_RightCancellation
 
 variable {Group : Type} [MyGroup Group]

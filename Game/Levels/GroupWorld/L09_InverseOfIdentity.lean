@@ -1,5 +1,5 @@
 import Game.Metadata
-import Game.Definitions.Group.Group
+import Game.Documentation.Group.Group
 import Game.Levels.GroupWorld.L08_UniqueInverse
 
 variable {Group : Type} [MyGroup Group]
@@ -11,7 +11,7 @@ Title "Inverse of Identity"
 
 Introduction "In the last level, we proved that every element has a unique double-sided inverse. Naturally, that includes the identity element. So what's the inverse of `1`? And what's `1` the inverse of?"
 
-/-- `id_is_inv_id` says `(1 : Group) = 1⁻¹`. -/
+/-- `id_is_inv_id` says `1 = 1⁻¹`. -/
 TheoremDoc id_is_inv_id as "id_is_inv_id" in "Group"
 
 Statement id_is_inv_id : (1 : Group) = 1⁻¹ := by

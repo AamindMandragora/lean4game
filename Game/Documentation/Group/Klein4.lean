@@ -1,4 +1,4 @@
-import Game.Definitions.Group.MyAbelianGroup
+import Game.Documentation.Group.MyAbelianGroup
 
 inductive Klein4 : Type
   | e | a | b | c

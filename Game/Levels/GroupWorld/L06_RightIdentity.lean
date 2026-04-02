@@ -1,5 +1,6 @@
 import Game.Metadata
-import Game.Definitions.Group.Group
+import Game.Documentation.Tactic.apply
+import Game.Documentation.Group.Group
 import Game.Levels.GroupWorld.L05_RightInverse
 
 variable {Group : Type} [MyGroup Group]

@@ -1,4 +1,4 @@
-import Game.Definitions.Group.MyGroup
+import Game.Documentation.Group.MyGroup
 
 variable {Group : Type} [MyGroup Group]
 

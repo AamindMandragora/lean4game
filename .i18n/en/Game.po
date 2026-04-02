@@ -1,18 +1,22 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-25\n"
+"POT-Creation-Date: 2026-04-01\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit"
 
+#: Game.Levels.ReflectionWorld.L12_AbelianSubgroupsAreNormal
+msgid "Abelian Subgroups are Normal"
+msgstr ""
+
 #. §0: `op_assoc a b c`
 #. §1: `(a * b) * c = a * (b * c)`
-#: Game.Definitions.Group.Group
-#: Game.Definitions.Group.Group
-#: Game.Definitions.Group.Group
+#: Game.Documentation.Group.Group
+#: Game.Documentation.Group.Group
+#: Game.Documentation.Group.Group
 #: Game.Levels.GroupWorld.L03_LeftInverseCancellation
 #: Game.Levels.GroupWorld.L04_LeftCancellation
 #: Game.Levels.GroupWorld.L05_RightInverse
@@ -23,8 +27,9 @@ msgstr "Project-Id-Version: Game v4.23.0\n"
 #: Game.Levels.GroupWorld.L10_RightCancellation
 #: Game.Levels.GroupWorld.L11_DoubleInverse
 #: Game.Levels.GroupWorld.L12_ShoesAndSocks
-#: Game.Definitions.Group.AbelianGroup
+#: Game.Documentation.Group.AbelianGroup
 #: Game.Levels.ReflectionWorld.L02_Conjugation
+#: Game.Levels.ReflectionWorld.L03_InverseDistribution
 msgid "§0 says §1."
 msgstr ""
 
@@ -45,6 +50,10 @@ msgstr ""
 msgid "Inverse of Identity"
 msgstr ""
 
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+msgid "Intersection of Subgroups"
+msgstr ""
+
 #: Game.Levels.GroupWorld.L05_RightInverse
 msgid "The trick here is to insert something that can eventually cancel out with something on the left. But to do that, we need an extra term to manipulate. How can we add an extra term to the left that doesn't change the value of the expression?"
 msgstr ""
@@ -57,6 +66,10 @@ msgstr ""
 #. §1: `a`
 #: Game.Levels.GroupWorld.L05_RightInverse
 msgid "We know we'd like to cancel out the §0 and the §1, but the parentheses aren't letting us. How can we fix that?"
+msgstr ""
+
+#: Game.Levels.ReflectionWorld.L09_OneStepClosure
+msgid "One Step Test: Closure"
 msgstr ""
 
 #. §0: `a⁻¹ * (a * b) = a⁻¹ * (a * c)`
@@ -91,13 +104,13 @@ msgstr ""
 #. §2: `h`
 #. §3: `P`
 #. §4: `Q`
-#: Game.Metadata
+#: Game.Documentation.Tactic.intro
 msgid "When the goal is in the form §0, §1 will create a hypothesis §2 that is the proposition §3, turning the goal into §4."
 msgstr ""
 
 #. §0: `rfl`
 #. §1: `∀ x, x = x`
-#: Game.Metadata
+#: Game.Documentation.Tactic.rfl
 msgid "§0 stands for reflect. One of the properties of equality (and every equivalence relation, if you know what those are) is reflexivity, which means that every element for which the relation is defined on naturally equals itself. In other words, §1. For any goal of that form, this tactic will instantly prove it."
 msgstr ""
 
@@ -114,12 +127,6 @@ msgstr ""
 msgid "You've just proved left cancellation, another really useful lemma! Now, onto something even more exciting!"
 msgstr ""
 
-#. §0: `1 * b = b`
-#. §1: `1`
-#: Game.Levels.GroupWorld.L03_LeftInverseCancellation
-msgid "We're now left with §0. What group axiom can we use to remove the §1?"
-msgstr ""
-
 #. §0: `Group`
 #. §1: `1 = 1`
 #. §2: `rfl`
@@ -128,6 +135,12 @@ msgstr ""
 msgid "Welcome to level one! Our goal is to prove that, inside some group §0, §1. Seems pretty simple, right? Yeah, there's no trick here. Since groups are based off sets, each element in the group will be unique and thus an equality operator is defined. The property that every element equals itself is called **reflexivity**.\n"
 "\n"
 "In Lean, we can cite the property using the §2 tactic. You can learn more about it, and future other tactics, by clicking on the §3 section on the right and selecting it. (I say can, but you really should, as there's extra information in the docs that will be necessary.)"
+msgstr ""
+
+#. §0: `1 * b = b`
+#. §1: `1`
+#: Game.Levels.GroupWorld.L03_LeftInverseCancellation
+msgid "We're now left with §0. What group axiom can we use to remove the §1?"
 msgstr ""
 
 #: Game.Levels.GroupWorld.L08_UniqueInverse
@@ -165,6 +178,10 @@ msgstr ""
 msgid "Use §0 to replace the §1 with §2."
 msgstr ""
 
+#: Game.Levels.ReflectionWorld.L05_TrivialSubgroup
+msgid "Trivial Subgroup"
+msgstr ""
+
 #: Game.Levels.ReflectionWorld.L01_Commutator
 #: Game.Levels.ReflectionWorld.L01_Commutator
 #: Game.Levels.ReflectionWorld.L01_Commutator
@@ -187,6 +204,192 @@ msgstr ""
 #: Game.Levels.ReflectionWorld.L02_Conjugation
 #: Game.Levels.ReflectionWorld.L02_Conjugation
 #: Game.Levels.ReflectionWorld.L02_Conjugation
+#: Game.Levels.ReflectionWorld.L03_InverseDistribution
+#: Game.Levels.ReflectionWorld.L03_InverseDistribution
+#: Game.Levels.ReflectionWorld.L03_InverseDistribution
+#: Game.Levels.ReflectionWorld.L03_InverseDistribution
+#: Game.Levels.ReflectionWorld.L03_InverseDistribution
+#: Game.Levels.ReflectionWorld.L03_InverseDistribution
+#: Game.Documentation.Tactic.constructor
+#: Game.Documentation.Tactic.trivial
+#: Game.Levels.ReflectionWorld.L04_Subgroup
+#: Game.Levels.ReflectionWorld.L04_Subgroup
+#: Game.Levels.ReflectionWorld.L04_Subgroup
+#: Game.Levels.ReflectionWorld.L04_Subgroup
+#: Game.Levels.ReflectionWorld.L04_Subgroup
+#: Game.Levels.ReflectionWorld.L04_Subgroup
+#: Game.Levels.ReflectionWorld.L04_Subgroup
+#: Game.Levels.ReflectionWorld.L04_Subgroup
+#: Game.Levels.ReflectionWorld.L04_Subgroup
+#: Game.Levels.ReflectionWorld.L04_Subgroup
+#: Game.Documentation.Tactic.show
+#: Game.Levels.ReflectionWorld.L05_TrivialSubgroup
+#: Game.Levels.ReflectionWorld.L05_TrivialSubgroup
+#: Game.Levels.ReflectionWorld.L05_TrivialSubgroup
+#: Game.Levels.ReflectionWorld.L05_TrivialSubgroup
+#: Game.Levels.ReflectionWorld.L05_TrivialSubgroup
+#: Game.Levels.ReflectionWorld.L05_TrivialSubgroup
+#: Game.Levels.ReflectionWorld.L05_TrivialSubgroup
+#: Game.Levels.ReflectionWorld.L05_TrivialSubgroup
+#: Game.Levels.ReflectionWorld.L05_TrivialSubgroup
+#: Game.Levels.ReflectionWorld.L05_TrivialSubgroup
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+#: Game.Documentation.Tactic.obtain
+#: Game.Levels.ReflectionWorld.L07_OneStepIdentity
+#: Game.Levels.ReflectionWorld.L07_OneStepIdentity
+#: Game.Levels.ReflectionWorld.L07_OneStepIdentity
+#: Game.Levels.ReflectionWorld.L07_OneStepIdentity
+#: Game.Levels.ReflectionWorld.L07_OneStepIdentity
+#: Game.Levels.ReflectionWorld.L07_OneStepIdentity
+#: Game.Levels.ReflectionWorld.L07_OneStepIdentity
+#: Game.Levels.ReflectionWorld.L07_OneStepIdentity
+#: Game.Levels.ReflectionWorld.L07_OneStepIdentity
+#: Game.Levels.ReflectionWorld.L07_OneStepIdentity
+#: Game.Levels.ReflectionWorld.L07_OneStepIdentity
+#: Game.Levels.ReflectionWorld.L07_OneStepIdentity
+#: Game.Levels.ReflectionWorld.L07_OneStepIdentity
+#: Game.Levels.ReflectionWorld.L07_OneStepIdentity
+#: Game.Levels.ReflectionWorld.L08_OneStepInverse
+#: Game.Levels.ReflectionWorld.L08_OneStepInverse
+#: Game.Levels.ReflectionWorld.L08_OneStepInverse
+#: Game.Levels.ReflectionWorld.L08_OneStepInverse
+#: Game.Levels.ReflectionWorld.L08_OneStepInverse
+#: Game.Levels.ReflectionWorld.L08_OneStepInverse
+#: Game.Levels.ReflectionWorld.L08_OneStepInverse
+#: Game.Levels.ReflectionWorld.L08_OneStepInverse
+#: Game.Levels.ReflectionWorld.L08_OneStepInverse
+#: Game.Levels.ReflectionWorld.L08_OneStepInverse
+#: Game.Levels.ReflectionWorld.L08_OneStepInverse
+#: Game.Levels.ReflectionWorld.L08_OneStepInverse
+#: Game.Levels.ReflectionWorld.L09_OneStepClosure
+#: Game.Levels.ReflectionWorld.L09_OneStepClosure
+#: Game.Levels.ReflectionWorld.L09_OneStepClosure
+#: Game.Levels.ReflectionWorld.L09_OneStepClosure
+#: Game.Levels.ReflectionWorld.L09_OneStepClosure
+#: Game.Levels.ReflectionWorld.L09_OneStepClosure
+#: Game.Levels.ReflectionWorld.L09_OneStepClosure
+#: Game.Levels.ReflectionWorld.L09_OneStepClosure
+#: Game.Levels.ReflectionWorld.L09_OneStepClosure
+#: Game.Levels.ReflectionWorld.L09_OneStepClosure
+#: Game.Levels.ReflectionWorld.L09_OneStepClosure
+#: Game.Levels.ReflectionWorld.L09_OneStepClosure
+#: Game.Levels.ReflectionWorld.L09_OneStepClosure
+#: Game.Levels.ReflectionWorld.L09_OneStepClosure
+#: Game.Levels.ReflectionWorld.L09_OneStepClosure
+#: Game.Levels.ReflectionWorld.L09_OneStepClosure
+#: Game.Levels.ReflectionWorld.L09_OneStepClosure
+#: Game.Levels.ReflectionWorld.L09_OneStepClosure
+#: Game.Levels.ReflectionWorld.L09_OneStepClosure
+#: Game.Levels.ReflectionWorld.L09_OneStepClosure
+#: Game.Levels.ReflectionWorld.L10_OneStepTest
+#: Game.Levels.ReflectionWorld.L10_OneStepTest
+#: Game.Levels.ReflectionWorld.L10_OneStepTest
+#: Game.Levels.ReflectionWorld.L10_OneStepTest
+#: Game.Levels.ReflectionWorld.L10_OneStepTest
+#: Game.Levels.ReflectionWorld.L10_OneStepTest
+#: Game.Levels.ReflectionWorld.L10_OneStepTest
+#: Game.Levels.ReflectionWorld.L10_OneStepTest
+#: Game.Levels.ReflectionWorld.L10_OneStepTest
+#: Game.Levels.ReflectionWorld.L10_OneStepTest
+#: Game.Levels.ReflectionWorld.L10_OneStepTest
+#: Game.Levels.ReflectionWorld.L10_OneStepTest
+#: Game.Levels.ReflectionWorld.L10_OneStepTest
+#: Game.Levels.ReflectionWorld.L10_OneStepTest
+#: Game.Levels.ReflectionWorld.L10_OneStepTest
+#: Game.Levels.ReflectionWorld.L10_OneStepTest
+#: Game.Levels.ReflectionWorld.L10_OneStepTest
+#: Game.Levels.ReflectionWorld.L10_OneStepTest
+#: Game.Levels.ReflectionWorld.L10_OneStepTest
+#: Game.Levels.ReflectionWorld.L10_OneStepTest
+#: Game.Levels.ReflectionWorld.L11_NormalSubgroup
+#: Game.Levels.ReflectionWorld.L11_NormalSubgroup
+#: Game.Levels.ReflectionWorld.L11_NormalSubgroup
+#: Game.Levels.ReflectionWorld.L11_NormalSubgroup
+#: Game.Levels.ReflectionWorld.L11_NormalSubgroup
+#: Game.Levels.ReflectionWorld.L11_NormalSubgroup
+#: Game.Levels.ReflectionWorld.L11_NormalSubgroup
+#: Game.Levels.ReflectionWorld.L11_NormalSubgroup
+#: Game.Levels.ReflectionWorld.L11_NormalSubgroup
+#: Game.Levels.ReflectionWorld.L11_NormalSubgroup
+#: Game.Levels.ReflectionWorld.L11_NormalSubgroup
+#: Game.Levels.ReflectionWorld.L11_NormalSubgroup
+#: Game.Levels.ReflectionWorld.L11_NormalSubgroup
+#: Game.Levels.ReflectionWorld.L11_NormalSubgroup
+#: Game.Levels.ReflectionWorld.L11_NormalSubgroup
+#: Game.Levels.ReflectionWorld.L11_NormalSubgroup
+#: Game.Levels.ReflectionWorld.L12_AbelianSubgroupsAreNormal
+#: Game.Levels.ReflectionWorld.L12_AbelianSubgroupsAreNormal
+#: Game.Levels.ReflectionWorld.L12_AbelianSubgroupsAreNormal
+#: Game.Levels.ReflectionWorld.L12_AbelianSubgroupsAreNormal
+#: Game.Levels.ReflectionWorld.L12_AbelianSubgroupsAreNormal
+#: Game.Levels.ReflectionWorld.L12_AbelianSubgroupsAreNormal
+#: Game.Levels.ReflectionWorld.L12_AbelianSubgroupsAreNormal
+#: Game.Levels.ReflectionWorld.L12_AbelianSubgroupsAreNormal
+#: Game.Levels.ReflectionWorld.L12_AbelianSubgroupsAreNormal
+#: Game.Levels.ReflectionWorld.L12_AbelianSubgroupsAreNormal
+#: Game.Levels.ReflectionWorld.L12_AbelianSubgroupsAreNormal
+#: Game.Levels.ReflectionWorld.L12_AbelianSubgroupsAreNormal
+#: Game.Levels.ReflectionWorld.L12_AbelianSubgroupsAreNormal
+#: Game.Levels.ReflectionWorld.L12_AbelianSubgroupsAreNormal
+#: Game.Levels.ReflectionWorld.L12_AbelianSubgroupsAreNormal
+#: Game.Levels.ReflectionWorld.L12_AbelianSubgroupsAreNormal
+#: Game.Levels.ReflectionWorld.L12_AbelianSubgroupsAreNormal
+#: Game.Levels.ReflectionWorld.L12_AbelianSubgroupsAreNormal
 #: Game.Levels.ReflectionWorld
 msgid "TODO"
 msgstr ""
@@ -212,6 +415,10 @@ msgstr ""
 #. §2: `1`
 #: Game.Levels.GroupWorld.L07_UniqueIdentity
 msgid "Our end goal is to show that §0. Take a look at our assumption §1. How can we manipulate it to get a §2 on the right side?"
+msgstr ""
+
+#: Game.Levels.ReflectionWorld.L11_NormalSubgroup
+msgid "Normal Subgroups"
 msgstr ""
 
 #. §0: `a`
@@ -310,7 +517,7 @@ msgstr ""
 #. §27: `rw [lemma a b c ...]`
 #. §28: `lemma`
 #. §29: `rw [lemma1, lemma2, ...]`
-#: Game.Metadata
+#: Game.Documentation.Tactic.rw
 msgid "§0 stands for rewrite. Let §1 and §2 be the left and right hand sides of some §3, then §4 replaces every instance of §5 in the goal with §6. If the goal instead has §7s that we want to replace with §8, we can do §9 (the arrow is typed using \\\\l). We can also do §10 to replace every instance of §11 in the hypothesis §12 with §13. Basically, if we have some assumption that §14, §15 will substitute an §16 for a §17 in the goal. There actually is a tactic called §18, but the difference is that §19 inherently attemps to use §20 at the end, which saves a line of proof and renders the former tactic obsolete. If §21's hypothesis includes a variable §22, then instead of letting Lean try and choose the first valid §23 in the proof, we can specify it ourselves using §24, where §25 is the variable we wanted to match. If §26 has multiple variables, we can specify all of them sequentially using §27. Similarly, if we have multiple §28s we want to replace, we can use §29."
 msgstr ""
 
@@ -323,10 +530,28 @@ msgstr ""
 msgid "Now, we can simply multiply §0 by itself."
 msgstr ""
 
+#. §0: `one_step_test H hx h`
+#. §1: `H`
+#. §2: `a * b⁻¹`
+#. §3: `h`
+#. §4: `hx`
+#. §5: `H`
+#: Game.Levels.ReflectionWorld.L10_OneStepTest
+msgid "§0 says that if §1 is closed under §2 by §3 and nonempty by §4, then §5 is a subgroup."
+msgstr ""
+
 #. §0: `g`
 #. §1: `g⁻¹`
 #: Game.Levels.GroupWorld.L11_DoubleInverse
 msgid "Now it's actually time to perform the cancellations. How can we combine the §0 and the §1?"
+msgstr ""
+
+#. §0: `S`
+#. §1: `a ∈ S`
+#. §2: `g * a * g⁻¹ ∈ S`
+#. §3: `g`
+#: Game.Documentation.Group.NormalSubgroup
+msgid "A **normal subgroup** is a subgroup §0 that is closed under conjugation: if §1, then §2 for all §3 in the group."
 msgstr ""
 
 #: Game.Levels.GroupWorld.L11_DoubleInverse
@@ -351,6 +576,17 @@ msgstr ""
 msgid "Now, «{h1}» should look like our goal. What tactic can we use to prove the goal using the assumption?"
 msgstr ""
 
+#. §0: `H`
+#. §1: `G`
+#. §2: `H`
+#. §3: `a`
+#. §4: `H`
+#. §5: `a^⁻¹`
+#. §6: `H`
+#: Game.Documentation.Group.Subgroup
+msgid "A **subgroup** is a subset §0 of a group §1 that is itself a group under the same operation. Specifically, §2 must contain the same identity element, be closed under the operation, and for every element §3 in §4, there must exist an §5 in §6."
+msgstr ""
+
 #: Game.Levels.GroupWorld.L07_UniqueIdentity
 msgid "Now we have to cancel out terms."
 msgstr ""
@@ -369,6 +605,10 @@ msgid "*Abstract Algebra, The Game*\n"
 "- **Game Design**: [Advayth Pashupati](https://github.com/AamindMandragora)\n"
 "- **Department**: [Mathematics at the University of Illinois](https://math.illinois.edu)\n"
 "- **Many Thanks To**: The lean4game team and their wonderful system!"
+msgstr ""
+
+#: Game.Levels.ReflectionWorld.L10_OneStepTest
+msgid "One Step Test"
 msgstr ""
 
 #: Game.Levels.GroupWorld.L05_RightInverse
@@ -503,6 +743,10 @@ msgstr ""
 msgid "We want to show that §0 is an inverse of §1. Have we proven a lemma in the past that might be applicable here?"
 msgstr ""
 
+#: Game.Levels.ReflectionWorld.L08_OneStepInverse
+msgid "One Step Test: Inverses"
+msgstr ""
+
 #: Game.Levels.ReflectionWorld.L01_Commutator
 msgid "Commutator"
 msgstr ""
@@ -513,7 +757,7 @@ msgstr ""
 #. §3: `P`
 #. §4: `h`
 #. §5: `P ∧ Q`
-#: Game.Metadata
+#: Game.Documentation.Tactic.have
 msgid "We can use §0 to introduce a smaller or slightly altered version of the goal which we then prove in one line, and that proof becomes a hypothesis we can use in the future. For example, for some goal of the form §1, §2 will use a tactic to prove §3, which then becomes a hypothesis §4 we can use to prove §5."
 msgstr ""
 
@@ -587,7 +831,7 @@ msgstr ""
 
 #. §0: `h`
 #. §1: `exact h`
-#: Game.Metadata
+#: Game.Documentation.Tactic.exact
 msgid "When the goal is the exact same as some hypothesis §0, §1 will solve it."
 msgstr ""
 
@@ -638,7 +882,7 @@ msgstr ""
 #. §7: `1 * g = g`
 #. §8: `inv_op`
 #. §9: `g⁻¹ * g = 1`
-#: Game.Definitions.Group.MyGroup
+#: Game.Documentation.Group.MyGroup
 msgid "A **group** is a set §0 equipped with an operation §1, an identity element §2, and an inverse operation §3, satisfying three axioms:\n"
 "\n"
 "- **Associativity** (§4): §5\n"
@@ -659,7 +903,7 @@ msgstr ""
 
 #. §0: `op_comm`
 #. §1: `a * b = b * a`
-#: Game.Definitions.Group.MyAbelianGroup
+#: Game.Documentation.Group.MyAbelianGroup
 msgid "An **abelian group** is a group where the operation is commutative. That is, in addition to the three group axioms, it satisfies:\n"
 "\n"
 "- **Commutativity** (§0): §1\n"
@@ -684,6 +928,10 @@ msgstr ""
 msgid "Simplification Practice"
 msgstr ""
 
+#: Game.Levels.ReflectionWorld.L07_OneStepIdentity
+msgid "One Step Test: Identity"
+msgstr ""
+
 #: Game.Levels.GroupWorld.L04_LeftCancellation
 msgid "Left Cancellation"
 msgstr ""
@@ -696,6 +944,16 @@ msgstr ""
 
 #: Game
 msgid "Abstract Algebra, the Game"
+msgstr ""
+
+#. §0: `one_step_id H h hx`
+#. §1: `H`
+#. §2: `a * b⁻¹`
+#. §3: `h`
+#. §4: `hx`
+#. §5: `1 ∈ H`
+#: Game.Levels.ReflectionWorld.L07_OneStepIdentity
+msgid "§0 says that if §1 is closed under §2 by §3 and nonempty by §4, then §5."
 msgstr ""
 
 #. §0: `rw [id_op]`
@@ -798,7 +1056,7 @@ msgstr ""
 #. §6: `h : P`
 #. §7: `apply lemma at h`
 #. §8: `h : Q`
-#: Game.Metadata
+#: Game.Documentation.Tactic.apply
 msgid "We can use §0 when the goal is in the form of some lemma's conclusion, replacing it with that lemma's hypothesis, which may be easier to prove. If §1 states that §2, and the goal is §3, §4 will make the goal §5. Also, if we have an assumption §6, then we can §7 to turn it into §8."
 msgstr ""
 
@@ -873,6 +1131,15 @@ msgstr ""
 msgid "Use §0 to replace an instance of §1 with §2."
 msgstr ""
 
+#. §0: `subgroup_intersection H₁ H₂ hH₁ hH₂`
+#: Game.Levels.ReflectionWorld.L06_SubgroupIntersection
+msgid "§0 says the intersection of two subgroups is a subgroup."
+msgstr ""
+
+#: Game.Levels.ReflectionWorld.L04_Subgroup
+msgid "Subgroup"
+msgstr ""
+
 #. §0: `b⁻¹`
 #. §1: `b`
 #: Game.Levels.GroupWorld.L12_ShoesAndSocks
@@ -881,6 +1148,17 @@ msgstr ""
 
 #: Game.Levels.GroupWorld.L08_UniqueInverse
 msgid "We have a handy lemma from a past level that can simplify the left side in one step."
+msgstr ""
+
+#. §0: `one_step_inv H h hε a ha`
+#. §1: `H`
+#. §2: `a * b⁻¹`
+#. §3: `h`
+#. §4: `hε`
+#. §5: `a ∈ H`
+#. §6: `a⁻¹ ∈ H`
+#: Game.Levels.ReflectionWorld.L08_OneStepInverse
+msgid "§0 says that if §1 is closed under §2 by §3 and contains the identity by §4, then §5 implies §6."
 msgstr ""
 
 #: Game.Levels.GroupWorld.L05_RightInverse
@@ -896,8 +1174,24 @@ msgstr ""
 msgid "Now, regroup the terms on both sides."
 msgstr ""
 
+#. §0: `one_step_op H h hε a b ha hb`
+#. §1: `H`
+#. §2: `a * b⁻¹`
+#. §3: `h`
+#. §4: `hε`
+#. §5: `a ∈ H`
+#. §6: `b ∈ H`
+#. §7: `a * b ∈ H`
+#: Game.Levels.ReflectionWorld.L09_OneStepClosure
+msgid "§0 says that if §1 is closed under §2 by §3 and contains the identity by §4, then §5 and §6 implies §7."
+msgstr ""
+
 #: Game.Levels.GroupWorld.L10_RightCancellation
 msgid "You have to remove the extra identities somehow so it matches the goal."
+msgstr ""
+
+#: Game.Levels.ReflectionWorld.L03_InverseDistribution
+msgid "Inverse Distribution"
 msgstr ""
 
 #. §0: `e`

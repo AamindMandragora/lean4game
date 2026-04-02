@@ -1,5 +1,5 @@
-import Game.Definitions.Group.Group
-import Game.Definitions.Group.MyAbelianGroup
+import Game.Documentation.Group.Group
+import Game.Documentation.Group.MyAbelianGroup
 
 variable {AbelianGroup : Type} [MyAbelianGroup AbelianGroup]
 

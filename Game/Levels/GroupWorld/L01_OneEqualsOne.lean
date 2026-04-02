@@ -1,5 +1,6 @@
 import Game.Metadata
-import Game.Definitions.Group.Group
+import Game.Documentation.Tactic.rfl
+import Game.Documentation.Group.Group
 
 variable {Group : Type} [MyGroup Group]
 

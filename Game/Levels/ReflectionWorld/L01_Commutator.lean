@@ -1,5 +1,5 @@
 import Game.Metadata
-import Game.Definitions.Group.Group
+import Game.Documentation.Group.Group
 import Game.Levels.GroupWorld.L12_ShoesAndSocks
 
 variable {Group : Type} [MyGroup Group]
@@ -29,3 +29,5 @@ Statement (a b : Group) (h : a * b = b * a) : a * b * a⁻¹ * b⁻¹ = 1 := by
   rw [op_inv]
 
 Conclusion "TODO"
+
+NewTheorem inv_of_inv_is_g
