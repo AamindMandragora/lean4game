@@ -7,7 +7,7 @@ Level 6
 
 Title "Intersection of Subgroups"
 
-Introduction "Here's a natural question: if you take two subgroups and intersect them, do you get another subgroup? The answer is yes, and the proof is essentially 'do everything twice.'
+Introduction "Here's a natural question: if you take two subgroups and intersect them, do you get another subgroup? The answer is yes, and the proof is essentially 'do everything twice', which makes this the longest proof we'll see in this world by a lot.
 
 Given `H₁` and `H₂`, both subgroups, we define their intersection as the set of elements that belong to *both*. In Lean, that's `fun g => H₁ g ∧ H₂ g`, where `∧` is logical 'and.' To prove a conjunction `P ∧ Q`, you use `constructor` (which you already know!) to split it into two subgoals: prove `P`, then prove `Q`. To *use* a conjunction from an assumption `h : P ∧ Q`, you can access the left part with `h.left` and the right part with `h.right`.
 

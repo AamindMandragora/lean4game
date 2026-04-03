@@ -11,7 +11,7 @@ Title "Subgroup"
 
 Introduction "Time for a new concept. A **subgroup** is a subset of a group that is itself a group under the same operation. Formally, a subset `H` of a group `G` is a subgroup if it satisfies three properties: it contains the identity, it's closed under the group operation, and it's closed under inverses. (Sound familiar? Those are the group axioms, minus associativity — which is inherited for free.)
 
-We've defined a structure called `IsSubgroup` that bundles these three properties together. To prove something is a subgroup, you'll need to prove all three. The `constructor` tactic will split the goal into three separate `case`s, one for each property. Then, for each subgoal, you prove it individually.
+We've defined a structure called `IsSubgroup` that bundles these three properties together. To prove something is a subgroup, you'll need to prove all three. The `constructor` tactic will split the goal into three separate `case`s, one for each property. Then, for each subgoal, you prove it individually, either as a single line by `case c => proof` or by writing `case c => `, entering a new line, and then a multi-step proof.
 
 For our first subgroup proof, let's go with the easiest possible case. We define `Univ` as the predicate that accepts *every* element of the group — `Univ g` is always `True`, regardless of `g`. Is the entire group a subgroup of itself? Obviously. But let's make Lean believe us.
 
